@@ -37,10 +37,10 @@
     <nav class="fixed top-0 left-0 w-full bg-[#FAFAFA]/90 backdrop-blur-md z-50 border-b border-gray-200/50">
         <div class="max-w-[1400px] mx-auto px-6 h-20 flex items-center justify-between">
             <div class="flex items-center">
-                <img src="./logo.svg" alt="критфактор" class="h-8 w-auto" aria-hidden="true">
+                <img src="./logo.svg" alt="критфактор" class="h-6 sm:h-8 w-auto" aria-hidden="true">
             </div>
             
-            <div class="hidden md:flex gap-8 text-sm font-medium text-gray-500">
+            <div class="hidden lg:flex gap-8 text-sm font-medium text-gray-500">
                 <a href="#how" class="hover:text-black transition-colors">Подход</a>
                 <a href="#zones" class="hover:text-black transition-colors">Что проверяем</a>
                 <a href="#tariffs" class="hover:text-black transition-colors">Тарифы</a>
@@ -48,9 +48,30 @@
                 <a href="#faq" class="hover:text-black transition-colors">FAQ</a>
             </div>
             
-            <a href="https://t.me/dima_critfaktor" target="_blank" rel="noopener noreferrer" class="bg-black text-white px-6 py-2.5 rounded-lg text-sm font-semibold hover:bg-gray-800 transition-colors">
-                Связаться
-            </a>
+            <div class="flex items-center gap-4">
+                <a href="https://t.me/dima_critfaktor" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-block bg-black text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-gray-800 transition-colors">
+                    Связаться
+                </a>
+                
+                <button id="mobile-menu-btn" class="lg:hidden flex flex-col justify-center items-center w-10 h-10 border border-gray-200 rounded-lg bg-white shadow-sm gap-1.5 focus:outline-none" aria-label="Открыть меню">
+                    <span class="w-5 h-0.5 bg-black transition-transform duration-300" id="burger-line-1"></span>
+                    <span class="w-5 h-0.5 bg-black transition-opacity duration-300" id="burger-line-2"></span>
+                    <span class="w-5 h-0.5 bg-black transition-transform duration-300" id="burger-line-3"></span>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden lg:hidden border-t border-gray-200/50 bg-[#FAFAFA]/95 backdrop-blur-md">
+            <div class="flex flex-col gap-6 px-6 py-8 text-base font-semibold text-gray-600">
+                <a href="#how" onclick="toggleMobileMenu()" class="hover:text-black transition-colors py-2 border-b border-gray-100">Подход</a>
+                <a href="#zones" onclick="toggleMobileMenu()" class="hover:text-black transition-colors py-2 border-b border-gray-100">Что проверяем</a>
+                <a href="#tariffs" onclick="toggleMobileMenu()" class="hover:text-black transition-colors py-2 border-b border-gray-100">Тарифы</a>
+                <a href="#team" onclick="toggleMobileMenu()" class="hover:text-black transition-colors py-2 border-b border-gray-100">Команда</a>
+                <a href="#faq" onclick="toggleMobileMenu()" class="hover:text-black transition-colors py-2 border-b border-gray-100">FAQ</a>
+                <a href="https://t.me/dima_critfaktor" target="_blank" rel="noopener noreferrer" class="sm:hidden block text-center bg-black text-white py-3.5 rounded-xl font-bold hover:bg-gray-800 transition-colors mt-2">
+                    Связаться в Telegram
+                </a>
+            </div>
         </div>
     </nav>
 
@@ -898,6 +919,27 @@
                     }
                 });
             }
+
+            function toggleMobileMenu() {
+                const menu = document.getElementById('mobile-menu');
+                const line1 = document.getElementById('burger-line-1');
+                const line2 = document.getElementById('burger-line-2');
+                const line3 = document.getElementById('burger-line-3');
+                
+                if (menu.classList.contains('hidden')) {
+                    menu.classList.remove('hidden');
+                    line1.style.transform = 'translateY(8px) rotate(45deg)';
+                    line2.style.opacity = '0';
+                    line3.style.transform = 'translateY(-8px) rotate(-45deg)';
+                } else {
+                    menu.classList.add('hidden');
+                    line1.style.transform = 'none';
+                    line2.style.opacity = '1';
+                    line3.style.transform = 'none';
+                }
+            }
+
+            document.getElementById('mobile-menu-btn').addEventListener('click', toggleMobileMenu);
         </script>
     </body>
     </html>
