@@ -30,6 +30,8 @@
     <meta property="twitter:image" content="https://critfaktor.ru/logo.svg">
 
     <!-- Stylesheet (Compiled Tailwind & Local Fonts) -->
+    <link rel="preload" href="./fonts/montserrat-v31-cyrillic_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./fonts/montserrat-v31-cyrillic_latin-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="./dist/styles.css">
 </head>
 <body class="antialiased">
@@ -153,7 +155,7 @@
             </div>
         </div>
 
-        <section id="how" class="py-16 md:py-24 max-w-[1400px] mx-auto px-6">
+        <section id="how" class="scroll-mt-20 py-16 md:py-24 max-w-[1400px] mx-auto px-6">
             <div class="text-[10px] md:text-xs font-bold uppercase tracking-widest text-gray-500 mb-8 md:mb-12">
                 — Как это работает
             </div>
@@ -199,7 +201,7 @@
             </div>
         </section>
 
-        <section id="zones" class="py-16 md:py-24 max-w-[1400px] mx-auto px-6 border-t border-borderLight">
+        <section id="zones" class="scroll-mt-20 py-16 md:py-24 max-w-[1400px] mx-auto px-6 border-t border-borderLight">
             <div class="text-[10px] md:text-xs font-bold uppercase tracking-widest text-gray-500 mb-8 md:mb-12">
                 — Что мы проверяем
             </div>
@@ -246,7 +248,7 @@
             </div>
         </section>
 
-        <section id="tariffs" class="py-16 md:py-24 border-t border-borderLight">
+        <section id="tariffs" class="scroll-mt-20 py-16 md:py-24 border-t border-borderLight">
             <div class="max-w-[1400px] mx-auto px-6">
                 <div class="text-[10px] md:text-xs font-bold uppercase tracking-widest text-gray-500 mb-8 md:mb-12">
                     — Тарифы
@@ -602,7 +604,7 @@
             </div>
         </section>
 
-        <section id="team" class="py-16 md:py-24 max-w-[1400px] mx-auto px-6 border-t border-borderLight">
+        <section id="team" class="scroll-mt-20 py-16 md:py-24 max-w-[1400px] mx-auto px-6 border-t border-borderLight">
             <div class="text-[10px] md:text-xs font-bold uppercase tracking-widest text-gray-500 mb-8 md:mb-12">
                 — Команда
             </div>
@@ -616,7 +618,7 @@
             <div class="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-12">
                 <div class="group cursor-pointer flex flex-col items-center text-center">
                     <div class="w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full overflow-hidden mb-6 bg-gray-100 border border-borderLight shadow-sm">
-                        <img src="./images/team/dmitry_ulybin.png" alt="Дмитрий Улыбин" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <img src="./images/team/dmitry_ulybin.png" alt="Дмитрий Улыбин" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                     </div>
                     <h3 class="text-lg md:text-xl font-bold mb-1">Дмитрий Улыбин</h3>
                     <div class="text-[10px] font-bold uppercase tracking-widest text-[#FF6600] mb-2">Лидер проекта</div>
@@ -625,7 +627,7 @@
 
                 <div class="group cursor-pointer flex flex-col items-center text-center">
                     <div class="w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full overflow-hidden mb-6 bg-gray-100 border border-borderLight shadow-sm">
-                        <img src="./images/team/victoria_martirosyan.png" alt="Виктория Мартиросян" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <img src="./images/team/victoria_martirosyan.png" alt="Виктория Мартиросян" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                     </div>
                     <h3 class="text-lg md:text-xl font-bold mb-1">Виктория Мартиросян</h3>
                     <div class="text-[10px] font-bold uppercase tracking-widest text-[#FF6600] mb-2">Бизнес-девелопер</div>
@@ -634,7 +636,7 @@
 
                 <div class="group cursor-pointer flex flex-col items-center text-center">
                     <div class="w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full overflow-hidden mb-6 bg-gray-100 border border-borderLight shadow-sm">
-                        <img src="./images/team/albina_borodavkina.jpg" alt="Альбина Бородавкина" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <img src="./images/team/albina_borodavkina.jpg" alt="Альбина Бородавкина" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                     </div>
                     <h3 class="text-lg md:text-xl font-bold mb-1">Альбина Бородавкина</h3>
                     <div class="text-[10px] font-bold uppercase tracking-widest text-[#FF6600] mb-2">Операционный лидер контроллинга</div>
@@ -643,7 +645,7 @@
                 
                 <div class="group cursor-pointer flex flex-col items-center text-center">
                     <div class="w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full overflow-hidden mb-6 bg-gray-100 border border-borderLight shadow-sm">
-                        <img src="./images/team/said_ganiev.jpg" alt="Саид Ганиев" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <img src="./images/team/said_ganiev.jpg" alt="Саид Ганиев" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                     </div>
                     <h3 class="text-lg md:text-xl font-bold mb-1">Саид Ганиев</h3>
                     <div class="text-[10px] font-bold uppercase tracking-widest text-[#FF6600] mb-2">Бизнес девелопер</div>
@@ -658,7 +660,7 @@
             </div>
         </section>
 
-        <section id="faq" class="py-16 md:py-24 max-w-[1400px] mx-auto px-6 border-t border-borderLight">
+        <section id="faq" class="scroll-mt-20 py-16 md:py-24 max-w-[1400px] mx-auto px-6 border-t border-borderLight">
             <div class="text-[10px] md:text-xs font-bold uppercase tracking-widest text-gray-500 mb-8 md:mb-12">
                 — FAQ
             </div>
