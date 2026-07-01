@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* montserrat-regular (400) - cyrillic_latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/montserrat-v31-cyrillic_latin-regular.woff2') format('woff2');
+}
+/* montserrat-500 - cyrillic_latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../fonts/montserrat-v31-cyrillic_latin-500.woff2') format('woff2');
+}
+/* montserrat-600 - cyrillic_latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../fonts/montserrat-v31-cyrillic_latin-600.woff2') format('woff2');
+}
+/* montserrat-700 - cyrillic_latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/montserrat-v31-cyrillic_latin-700.woff2') format('woff2');
+}
+/* montserrat-800 - cyrillic_latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('../fonts/montserrat-v31-cyrillic_latin-800.woff2') format('woff2');
+}
+
+body {
+    background-color: #FAFAFA;
+    color: #0A0A0A;
+    overflow-x: hidden;
+}
+
+details > summary {
+    list-style: none;
+}
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+details[open] summary ~ * {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.btn-black {
+    background-color: #0A0A0A;
+    color: #FFFFFF;
+    transition: all 0.2s ease;
+}
+.btn-black:hover {
+    background-color: #2A2A2A;
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #0A0A0A;
+    border: 1px solid #0A0A0A;
+    transition: all 0.2s ease;
+}
+.btn-outline:hover {
+    background-color: #E5E5E5;
+}
+
+.btn-white {
+    background-color: #FFFFFF;
+    color: #0A0A0A;
+    transition: all 0.2s ease;
+}
+.btn-white:hover {
+    background-color: #F0F0F0;
+    transform: translateY(-2px);
+}
+
+.toggle-tab.active {
+    background-color: #0A0A0A;
+    color: #FFFFFF;
+}
+.toggle-tab.inactive {
+    color: #666666;
+}
+.toggle-tab.inactive:hover {
+    color: #0A0A0A;
+}
+
+.pill-switch input:checked + label {
+    background-color: #FFFFFF;
+    color: #0A0A0A;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.pill-switch.dark input:checked + label {
+    background-color: #2A2A2A;
+    color: #FFFFFF;
+}
+
+.premium-radio input:checked + .radio-body {
+    border-color: #0A0A0A;
+    background-color: #F8F8F8;
+}
+.premium-radio input:checked + .radio-body .radio-circle {
+    border-color: #0A0A0A;
+    background-color: #0A0A0A;
+}
+.premium-radio input:checked + .radio-body .radio-circle .radio-dot {
+    opacity: 1;
+}
+
+.premium-radio-dark input:checked + .radio-body {
+    border-color: #FFFFFF;
+    background-color: #1A1A1A;
+}
+.premium-radio-dark input:checked + .radio-body .radio-circle {
+    border-color: #FFFFFF;
+    background-color: #FFFFFF;
+}
+.premium-radio-dark input:checked + .radio-body .radio-circle .radio-dot {
+    opacity: 1;
+    background-color: #0A0A0A;
+}

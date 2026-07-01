@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>критфактор | онлайн-контроллинг</title>
+    <meta name="description" content="Выявляем нарушения стандартов раньше, чем их заметит УК.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="критфактор, онлайн-контроллинг, аудит общепита, хорека, horeca, додо пицца стандарты, дринкит аудит, проверка стандартов пищевой безопасности, контроль качества, dodo is">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://critfaktor.ru/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://critfaktor.ru/">
+    <meta property="og:title" content="критфактор | онлайн-контроллинг">
+    <meta property="og:description" content="Внешний онлайн-аудит операционных процессов для партнёров Додо Пиццы, Дринкит и любых сетей HoReCa. Реальная картина того, что происходит на сменах.">
+    <meta property="og:image" content="https://critfaktor.ru/logo.svg">
+    <meta property="og:site_name" content="критфактор">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://critfaktor.ru/">
+    <meta property="twitter:title" content="критфактор | онлайн-контроллинг">
+    <meta property="twitter:description" content="Выявляем нарушения стандартов раньше, чем их заметит УК.">
+    <meta property="twitter:image" content="https://critfaktor.ru/logo.svg">
+
+    <!-- Stylesheet (Compiled Tailwind & Local Fonts) -->
+    <link rel="stylesheet" href="./dist/styles.css">
+</head>
+<body class="antialiased">
+
+    <nav class="fixed top-0 left-0 w-full bg-[#FAFAFA]/90 backdrop-blur-md z-50 border-b border-gray-200/50">
+        <div class="max-w-[1400px] mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center">
+                <img src="./logo.svg" alt="критфактор" class="h-8 w-auto" aria-hidden="true">
+            </div>
+            
+            <div class="hidden md:flex gap-8 text-sm font-medium text-gray-500">
+                <a href="#how" class="hover:text-black transition-colors">Подход</a>
+                <a href="#zones" class="hover:text-black transition-colors">Что проверяем</a>
+                <a href="#tariffs" class="hover:text-black transition-colors">Тарифы</a>
+                <a href="#team" class="hover:text-black transition-colors">Команда</a>
+                <a href="#faq" class="hover:text-black transition-colors">FAQ</a>
+            </div>
+            
+            <a href="https://t.me/dima_critfaktor" target="_blank" rel="noopener noreferrer" class="bg-black text-white px-6 py-2.5 rounded-lg text-sm font-semibold hover:bg-gray-800 transition-colors">
+                Связаться
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <header class="pt-28 md:pt-40 pb-12 md:pb-20 max-w-[1400px] mx-auto px-6">
+            <div class="text-[10px] md:text-xs font-bold uppercase tracking-widest text-gray-500 mb-8 md:mb-12">
+                — Независимый контроль · с 2023 года
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-end">
+                <div class="lg:col-span-8">
+                    <h1 class="text-4xl sm:text-5xl md:text-7xl lg:text-[84px] font-bold tracking-tighter leading-[1.05] text-[#1A1A1A]">
+                        Выявляем<br>
+                        нарушения<br>
+                        раньше, <span class="text-gray-400">чем их<br>
+                        заметит<br>
+                        управляющая<br>
+                        компания.</span>
+                    </h1>
+                </div>
+                
+                <div class="lg:col-span-4 flex flex-col justify-end pb-4">
+                    <p class="text-base md:text-lg text-gray-600 mb-8 max-w-sm leading-relaxed">
+                        критфактор — внешний онлайн-аудит операционных процессов для партнёров Додо Пиццы, Дринкит и любых сетей HoReCa. Реальная картина того, что происходит на сменах.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#tariffs" class="btn-black text-center px-8 py-4 rounded-xl text-sm font-bold flex items-center justify-center gap-2">
+                            Попробовать за 1 ₽ <span class="text-lg leading-none">→</span>
+                        </a>
+                        <a href="#tariffs" class="btn-outline text-center px-8 py-4 rounded-xl text-sm font-bold">
+                            Смотреть тарифы
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 mt-16 md:mt-24 pt-8 border-t border-borderLight">
+                <div>
+                    <div class="text-[10px] uppercase tracking-widest text-gray-400 font-semibold mb-2">На рынке</div>
+                    <div class="text-lg font-bold">3 года</div>
+                </div>
+                <div>
+                    <div class="text-[10px] uppercase tracking-widest text-gray-400 font-semibold mb-2">Партнёров</div>
+                    <div class="text-lg font-bold">11 партнёров</div>
+                </div>
+                <div>
+                    <div class="text-[10px] uppercase tracking-widest text-gray-400 font-semibold mb-2">Точек на контроле</div>
+                    <div class="text-lg font-bold">90 пиццерий</div>
+                </div>
+                <div>
+                    <div class="text-[10px] uppercase tracking-widest text-gray-400 font-semibold mb-2">Проверок проведено</div>
+                    <div class="text-lg font-bold">20 000+</div>
+                </div>
+            </div>
+        </header>
+
+        <div class="bg-black py-4 overflow-hidden flex w-full">
+            <div class="flex whitespace-nowrap animate-marquee items-center w-max">
+                <div class="flex items-center text-white text-sm font-medium uppercase tracking-widest">
+                    <span class="mx-6">Собственная CRM система</span><span class="text-gray-600">•</span>
+                    <span class="mx-6">Фокус на пищевой безопасности</span><span class="text-gray-600">•</span>
+                    <span class="mx-6">Строго по стандартам Додо</span><span class="text-gray-600">•</span>
+                    <span class="mx-6">Качество продукта</span><span class="text-gray-600">•</span>
+                    <span class="mx-6">Собственная CRM система</span><span class="text-gray-600">•</span>
+                    <span class="mx-6">Фокус на пищевой безопасности</span><span class="text-gray-600">•</span>
+                    <span class="mx-6">Строго по стандартам Додо</span><span class="text-gray-600">•</span>
+                    <span class="mx-6">Качество продукта</span><span class="text-gray-600">•</span>
+                </div>
+                <div class="flex items-center text-white text-sm font-medium uppercase tracking-widest">
+                    <span class="mx-6">Собственная CRM система</span><span class="text-gray-600">•</span>
+                    <span class="mx-6">Фокус на пищевой безопасности</span><span class="text-gray-600">•</span>
+                    <span class="mx-6">Строго по стандартам Додо</span><span class="text-gray-600">•</span>
+                    <span class="mx-6">Качество продукта</span><span class="text-gray-600">•</span>
+                    <span class="mx-6">Собственная CRM система</span><span class="text-gray-600">•</span>
+                    <span class="mx-6">Фокус на пищевой безопасности</span><span class="text-gray-600">•</span>
+                    <span class="mx-6">Строго по стандартам Додо</span><span class="text-gray-600">•</span>
+                    <span class="mx-6">Качество продукта</span><span class="text-gray-600">•</span>
+                </div>
+            </div>
+        </div>
+
+        <section id="how" class="py-16 md:py-24 max-w-[1400px] mx-auto px-6">
+            <div class="text-[10px] md:text-xs font-bold uppercase tracking-widest text-gray-500 mb-8 md:mb-12">
+                — Как это работает
+            </div>
+            
+            <div class="mb-12 md:mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight leading-tight">
+                    Четыре шага<br>от заявки до результата.
+                </h2>
+            </div>
+
+            <div class="border-t border-borderLight">
+                <div class="py-8 md:py-12 border-b border-borderLight flex flex-col md:flex-row gap-4 md:gap-12">
+                    <div class="text-sm font-mono text-gray-400 w-16 shrink-0">01</div>
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold mb-3">Подключение и тест</h3>
+                        <p class="text-gray-500 max-w-2xl text-base">Получаем доступы к камерам (DMSS, RedLine, сайт dodopizza.ru), проводим тестовую проверку за 1 ₽ и согласовываем тариф с партнером.</p>
+                    </div>
+                </div>
+                
+                <div class="py-8 md:py-12 border-b border-borderLight flex flex-col md:flex-row gap-4 md:gap-12">
+                    <div class="text-sm font-mono text-gray-400 w-16 shrink-0">02</div>
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold mb-3">Договор и Додо ИС</h3>
+                        <p class="text-gray-500 max-w-2xl text-base">Подключаемся к Додо ИС партнера, подписываем договор оказания услуг и приступаем к проведению проверок.</p>
+                    </div>
+                </div>
+
+                <div class="py-8 md:py-12 border-b border-borderLight flex flex-col md:flex-row gap-4 md:gap-12">
+                    <div class="text-sm font-mono text-gray-400 w-16 shrink-0">03</div>
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold mb-3">Отчёты и оплата</h3>
+                        <p class="text-gray-500 max-w-2xl text-base">Отчёт формируется в нашей CRM, а результаты проверок отправляются в мессенджер. Постоплата: выставляем счёт за прошедший месяц.</p>
+                    </div>
+                </div>
+
+                <div class="py-8 md:py-12 border-b border-borderLight flex flex-col md:flex-row gap-4 md:gap-12">
+                    <div class="text-sm font-mono text-gray-400 w-16 shrink-0">04</div>
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold mb-3">Итоговая встреча</h3>
+                        <p class="text-gray-500 max-w-2xl text-base">Ежемесячно ставим цели управляющим пиццерий и помогаем их достигать, улучшая результаты.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="zones" class="py-16 md:py-24 max-w-[1400px] mx-auto px-6 border-t border-borderLight">
+            <div class="text-[10px] md:text-xs font-bold uppercase tracking-widest text-gray-500 mb-8 md:mb-12">
+                — Что мы проверяем
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 mb-12 md:mb-16">
+                <div class="lg:col-span-6">
+                    <h2 class="text-4xl md:text-5xl font-bold tracking-tight leading-tight">
+                        Пять зон<br>операционного риска.
+                    </h2>
+                </div>
+                <div class="lg:col-span-6 flex items-end">
+                    <p class="text-lg text-gray-600 max-w-xl leading-relaxed">
+                        Наша основная цель — безопасный продукт для гостя и снижение рисков по рейтингам от УК. Каждая проверка — это отчёт с тайм-кодами, скриншотами и видео.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white border border-borderLight rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-xs font-mono text-gray-400 mb-6">01</div>
+                    <h3 class="text-xl font-bold mb-4">Пищевая безопасность</h3>
+                    <p class="text-sm text-gray-500 leading-relaxed">Перекрестное загрязнение, перемаркировка, продление срока годности, экстренная разморозка, качество мытья рук и уборки в зеленой зоне.</p>
+                </div>
+                <div class="bg-white border border-borderLight rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-xs font-mono text-gray-400 mb-6">02</div>
+                    <h3 class="text-xl font-bold mb-4">Качество продукта</h3>
+                    <p class="text-sm text-gray-500 leading-relaxed">Соблюдение рецептов и порядка начинения, использование стаканов, качество теста и бортиков, равномерность нанесения — на всех этапах от раскатки до упаковки.</p>
+                </div>
+                <div class="bg-white border border-borderLight rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-xs font-mono text-gray-400 mb-6">03</div>
+                    <h3 class="text-xl font-bold mb-4">Сервис и касса</h3>
+                    <p class="text-sm text-gray-500 leading-relaxed">Скорость реакции на гостя, сборка и выдача, качество приготовления напитков, витрина.</p>
+                </div>
+                <div class="bg-white border border-borderLight rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-xs font-mono text-gray-400 mb-6">04</div>
+                    <h3 class="text-xl font-bold mb-4">Чистота</h3>
+                    <p class="text-sm text-gray-500 leading-relaxed">Качество уборки во всех зонах, состояние инвентаря и химии.</p>
+                </div>
+                <div class="bg-white border border-borderLight rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-xs font-mono text-gray-400 mb-6">05</div>
+                    <h3 class="text-xl font-bold mb-4">Производственная эффективность</h3>
+                    <p class="text-sm text-gray-500 leading-relaxed">Обходы менеджера, соблюдение принципа конвейера.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tariffs" class="py-16 md:py-24 border-t border-borderLight">
+            <div class="max-w-[1400px] mx-auto px-6">
+                <div class="text-[10px] md:text-xs font-bold uppercase tracking-widest text-gray-500 mb-8 md:mb-12">
+                    — Тарифы
+                </div>
+                
+                <div class="mb-12 md:mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold tracking-tight leading-tight">
+                        Выберите свой<br>формат подписки.
+                    </h2>
+                </div>
+
+                <div class="flex justify-center mb-12 md:mb-16 overflow-x-auto pb-4">
+                    <div class="inline-flex bg-white rounded-full p-1 border border-borderLight shadow-sm shrink-0">
+                        <button onclick="switchBrand('dodo')" id="tab-dodo" class="toggle-tab active px-6 py-2.5 rounded-full text-sm font-bold transition-all">Додо Пицца</button>
+                        <button onclick="switchBrand('drinkit')" id="tab-drinkit" class="toggle-tab inactive px-6 py-2.5 rounded-full text-sm font-bold transition-all">Дринкит</button>
+                        <button onclick="switchBrand('anybiz')" id="tab-anybiz" class="toggle-tab inactive px-6 py-2.5 rounded-full text-sm font-bold transition-all">Любой бизнес</button>
+                    </div>
+                </div>
+
+                <div id="content-dodo" class="grid grid-cols-1 lg:grid-cols-3 gap-6 transition-opacity duration-300">
+                    <div class="bg-white border border-borderLight rounded-2xl p-8 flex flex-col h-full hover:shadow-lg transition-shadow">
+                        <h3 class="text-xl font-bold mb-2">Камера ГЦ</h3>
+                        <p class="text-sm text-gray-500 mb-8 min-h-[40px]">Сфокусированный контроль камеры горячего цеха.</p>
+                        
+                        <ul class="space-y-4 mb-8 flex-1 text-sm text-black">
+                            <li class="flex items-start"><span class="text-gray-300 mr-3">—</span> Запись с публичной камеры dodopizza.ru</li>
+                            <li class="flex items-start"><span class="text-gray-300 mr-3">—</span> Личный кабинет в CRM</li>
+                            <li class="flex items-start"><span class="text-gray-300 mr-3">—</span> Онлайн-статистика и тренды</li>
+                            <li class="flex items-start"><span class="text-gray-300 mr-3">—</span> Итоговая встреча за месяц</li>
+                        </ul>
+                        
+                        <div class="mt-auto">
+                            <div class="flex flex-col gap-2 mb-6">
+                                <label class="premium-radio cursor-pointer block">
+                                    <input type="radio" name="dodo-gc" value="8" class="sr-only" checked onchange="updatePrice('dodo', 'gc', '8')">
+                                    <div class="radio-body flex items-center justify-between p-3 border border-borderLight rounded-xl transition-all">
+                                        <div class="flex items-center gap-3">
+                                            <div class="radio-circle w-4 h-4 rounded-full border border-gray-300 flex items-center justify-center transition-colors shrink-0">
+                                                <div class="radio-dot w-1.5 h-1.5 rounded-full bg-white opacity-0 transition-opacity"></div>
+                                            </div>
+                                            <span class="font-bold text-sm text-gray-800">8 проверок / мес</span>
+                                        </div>
+                                    </div>
+                                </label>
+
+                                <label class="premium-radio cursor-pointer block">
+                                    <input type="radio" name="dodo-gc" value="12" class="sr-only" onchange="updatePrice('dodo', 'gc', '12')">
+                                    <div class="radio-body flex items-center justify-between p-3 border border-borderLight rounded-xl transition-all">
+                                        <div class="flex items-center gap-3">
+                                            <div class="radio-circle w-4 h-4 rounded-full border border-gray-300 flex items-center justify-center transition-colors shrink-0">
+                                                <div class="radio-dot w-1.5 h-1.5 rounded-full bg-white opacity-0 transition-opacity"></div>
+                                            </div>
+                                            <span class="font-bold text-sm text-gray-800">12 проверок / мес</span>
+                                        </div>
+                                        <span class="bg-gray-100 text-gray-600 text-[10px] font-bold px-2 py-1 rounded uppercase">-5%</span>
+                                    </div>
+                                </label>
+
+                                <label class="premium-radio cursor-pointer block">
+                                    <input type="radio" name="dodo-gc" value="3m" class="sr-only" onchange="updatePrice('dodo', 'gc', '3m')">
+                                    <div class="radio-body flex items-center justify-between p-3 border border-borderLight rounded-xl transition-all bg-green-50/30">
+                                        <div class="flex items-center gap-3">
+                                            <div class="radio-circle w-4 h-4 rounded-full border border-gray-300 flex items-center justify-center transition-colors shrink-0">
+                                                <div class="radio-dot w-1.5 h-1.5 rounded-full bg-white opacity-0 transition-opacity"></div>
+                                            </div>
+                                            <div class="flex flex-col">
+                                                <span class="font-bold text-sm text-gray-800 leading-tight">Пакет на 3 месяца</span>
+                                                <span class="text-[10px] text-green-600 font-semibold mt-0.5">Предоплата - дешевле</span>
+                                            </div>
+                                        </div>
+                                        <span class="bg-[#E5F5E5] text-[#008000] text-[10px] font-bold px-2 py-1 rounded uppercase">-15%</span>
+                                    </div>
+                                </label>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <div class="text-[32px] font-bold tracking-tight" id="price-dodo-gc">6 990 ₽</div>
+                                <div class="text-xs text-gray-500" id="desc-dodo-gc">в месяц • постоплата • за 1 объект</div>
+                            </div>
+                            
+                            <a href="https://t.me/dima_critfaktor" target="_blank" rel="noopener noreferrer" class="block w-full py-3.5 btn-outline text-center rounded-xl text-sm font-bold">Выбрать тариф →</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-black text-white rounded-2xl p-8 flex flex-col h-full relative transform lg:-translate-y-4 shadow-2xl">
+                        <div class="absolute top-6 right-6 bg-[#A64B2A] text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">Популярный</div>
+                        <h3 class="text-xl font-bold mb-2">Вся пиццерия</h3>
+                        <p class="text-gray-400 text-sm mb-8 min-h-[40px] pr-16">Комплексный контроль по всем камерам пиццерии.</p>
+                        
+                        <ul class="space-y-4 mb-8 flex-1 text-sm text-white">
+                            <li class="flex items-start"><span class="text-gray-600 mr-3">—</span> Работаем с DMSS, RedLine и др.</li>
+                            <li class="flex items-start"><span class="text-gray-600 mr-3">—</span> Все рабочие зоны и кассы</li>
+                            <li class="flex items-start"><span class="text-gray-600 mr-3">—</span> Личный кабинет в CRM</li>
+                            <li class="flex items-start"><span class="text-gray-600 mr-3">—</span> Итоговая встреча за месяц</li>
+                        </ul>
+                        
+                        <div class="mt-auto">
+                            <div class="flex flex-col gap-2 mb-6">
+                                <label class="premium-radio-dark cursor-pointer block">
+                                    <input type="radio" name="dodo-full" value="8" class="sr-only" checked onchange="updatePrice('dodo', 'full', '8')">
+                                    <div class="radio-body flex items-center justify-between p-3 border border-gray-800 rounded-xl transition-all">
+                                        <div class="flex items-center gap-3">
+                                            <div class="radio-circle w-4 h-4 rounded-full border border-gray-600 flex items-center justify-center transition-colors shrink-0">
+                                                <div class="radio-dot w-1.5 h-1.5 rounded-full bg-black opacity-0 transition-opacity"></div>
+                                            </div>
+                                            <span class="font-bold text-sm text-white">8 проверок / мес</span>
+                                        </div>
+                                    </div>
+                                </label>
+
+                                <label class="premium-radio-dark cursor-pointer block">
+                                    <input type="radio" name="dodo-full" value="12" class="sr-only" onchange="updatePrice('dodo', 'full', '12')">
+                                    <div class="radio-body flex items-center justify-between p-3 border border-gray-800 rounded-xl transition-all">
+                                        <div class="flex items-center gap-3">
+                                            <div class="radio-circle w-4 h-4 rounded-full border border-gray-600 flex items-center justify-center transition-colors shrink-0">
+                                                <div class="radio-dot w-1.5 h-1.5 rounded-full bg-black opacity-0 transition-opacity"></div>
+                                            </div>
+                                            <span class="font-bold text-sm text-white">12 проверок / мес</span>
+                                        </div>
+                                        <span class="bg-gray-800 text-gray-300 text-[10px] font-bold px-2 py-1 rounded uppercase">-5%</span>
+                                    </div>
+                                </label>
+
+                                <label class="premium-radio-dark cursor-pointer block">
+                                    <input type="radio" name="dodo-full" value="3m" class="sr-only" onchange="updatePrice('dodo', 'full', '3m')">
+                                    <div class="radio-body flex items-center justify-between p-3 border border-gray-800 rounded-xl transition-all bg-[#0a1a0a]/50">
+                                        <div class="flex items-center gap-3">
+                                            <div class="radio-circle w-4 h-4 rounded-full border border-gray-600 flex items-center justify-center transition-colors shrink-0">
+                                                <div class="radio-dot w-1.5 h-1.5 rounded-full bg-black opacity-0 transition-opacity"></div>
+                                            </div>
+                                            <div class="flex flex-col">
+                                                <span class="font-bold text-sm text-white leading-tight">Пакет на 3 месяца</span>
+                                                <span class="text-[10px] text-green-400 font-semibold mt-0.5">Предоплата - дешевле</span>
+                                            </div>
+                                        </div>
+                                        <span class="bg-green-900/50 text-green-400 text-[10px] font-bold px-2 py-1 rounded uppercase">-15%</span>
+                                    </div>
+                                </label>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <div class="text-[32px] font-bold tracking-tight" id="price-dodo-full">13 990 ₽</div>
+                                <div class="text-xs text-gray-400" id="desc-dodo-full">в месяц • постоплата • за 1 объект</div>
+                            </div>
+                            
+                            <a href="https://t.me/dima_critfaktor" target="_blank" rel="noopener noreferrer" class="block w-full py-3.5 btn-white text-center rounded-xl text-sm font-bold">Выбрать тариф →</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border border-[#FF6600]/20 rounded-2xl p-8 flex flex-col h-full hover:shadow-lg transition-shadow relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-gradient-to-l from-[#FF6600]/10 to-transparent w-32 h-32 rounded-bl-full -z-10"></div>
+                        
+                        <div class="inline-block bg-[#FFF4ED] text-[#FF6600] text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-sm mb-4 w-fit">
+                            Спецпредложение
+                        </div>
+                        
+                        <h3 class="text-xl font-bold mb-2">Рейтинг Стандартов <br><span class="text-base font-medium text-gray-700">локальная проверка</span></h3>
+                        <p class="text-sm text-[#FF6600] font-medium mb-6 min-h-[40px]">Узнайте результат раньше, чем придет Инспектор УК.</p>
+                        
+                        <ul class="space-y-4 mb-8 flex-1 text-sm text-black">
+                            <li class="flex items-start"><span class="text-[#FF6600] mr-3 font-bold">✓</span> Проведем проверку по видеозвонку с менеджером</li>
+                            <li class="flex items-start"><span class="text-[#FF6600] mr-3 font-bold">✓</span> Оцениваем по расширенному чек-листу РС от УК</li>
+                            <li class="flex items-start"><span class="text-[#FF6600] mr-3 font-bold">✓</span> Наш лучший эксперт с опытом 10+ лет в Додо</li>
+                            <li class="flex items-start"><span class="text-[#FF6600] mr-3 font-bold">✓</span> Покажем точки роста по РС</li>
+                        </ul>
+                        
+                        <div class="mt-auto">
+                            <div class="mb-4">
+                                <div class="text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-1">1 проверка</div>
+                                <div class="flex items-center gap-3">
+                                    <div class="text-[32px] font-bold tracking-tight text-[#FF6600]">1 690 ₽</div>
+                                    <div class="text-lg text-gray-400 line-through decoration-1">1 990 ₽</div>
+                                </div>
+                                <div class="inline-block mt-2 bg-[#FFF4ED] text-[#FF6600] text-[10px] font-bold px-2 py-1 rounded">ЦЕНА ДО 31.07</div>
+                            </div>
+                            
+                            <a href="https://t.me/dima_critfaktor" target="_blank" rel="noopener noreferrer" class="block w-full py-3.5 bg-[#FF6600] text-white hover:bg-[#E55C00] transition-colors text-center rounded-xl text-sm font-bold">Заказать →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="content-drinkit" class="hidden grid grid-cols-1 lg:grid-cols-3 gap-6 transition-opacity duration-300 opacity-0">
+                    <div class="bg-white border border-borderLight rounded-2xl p-8 flex flex-col h-full hover:shadow-lg transition-shadow">
+                        <h3 class="text-xl font-bold mb-2">Камера Бара</h3>
+                        <p class="text-sm text-gray-500 mb-8 min-h-[40px]">Сфокусированный контроль зоны напитков.</p>
+                        
+                        <ul class="space-y-4 mb-8 flex-1 text-sm text-black">
+                            <li class="flex items-start"><span class="text-gray-300 mr-3">—</span> Запись с основной камеры</li>
+                            <li class="flex items-start"><span class="text-gray-300 mr-3">—</span> Личный кабинет в CRM</li>
+                            <li class="flex items-start"><span class="text-gray-300 mr-3">—</span> Онлайн-статистика и тренды</li>
+                            <li class="flex items-start"><span class="text-gray-300 mr-3">—</span> Итоговая встреча за месяц</li>
+                        </ul>
+                        
+                        <div class="mt-auto">
+                            <div class="flex flex-col gap-2 mb-6">
+                                <label class="premium-radio cursor-pointer block">
+                                    <input type="radio" name="drinkit-gc" value="8" class="sr-only" checked onchange="updatePrice('drinkit', 'gc', '8')">
+                                    <div class="radio-body flex items-center justify-between p-3 border border-borderLight rounded-xl transition-all">
+                                        <div class="flex items-center gap-3">
+                                            <div class="radio-circle w-4 h-4 rounded-full border border-gray-300 flex items-center justify-center transition-colors shrink-0">
+                                                <div class="radio-dot w-1.5 h-1.5 rounded-full bg-white opacity-0 transition-opacity"></div>
+                                            </div>
+                                            <span class="font-bold text-sm text-gray-800">8 проверок / мес</span>
+                                        </div>
+                                    </div>
+                                </label>
+
+                                <label class="premium-radio cursor-pointer block">
+                                    <input type="radio" name="drinkit-gc" value="12" class="sr-only" onchange="updatePrice('drinkit', 'gc', '12')">
+                                    <div class="radio-body flex items-center justify-between p-3 border border-borderLight rounded-xl transition-all">
+                                        <div class="flex items-center gap-3">
+                                            <div class="radio-circle w-4 h-4 rounded-full border border-gray-300 flex items-center justify-center transition-colors shrink-0">
+                                                <div class="radio-dot w-1.5 h-1.5 rounded-full bg-white opacity-0 transition-opacity"></div>
+                                            </div>
+                                            <span class="font-bold text-sm text-gray-800">12 проверок / мес</span>
+                                        </div>
+                                        <span class="bg-gray-100 text-gray-600 text-[10px] font-bold px-2 py-1 rounded uppercase">-6%</span>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="mb-6">
+                                <div class="text-[32px] font-bold tracking-tight" id="price-drinkit-gc">5 990 ₽</div>
+                                <div class="text-xs text-gray-500" id="desc-drinkit-gc">в месяц • постоплата • за 1 объект</div>
+                            </div>
+                            <a href="https://t.me/dima_critfaktor" target="_blank" rel="noopener noreferrer" class="block w-full py-3.5 btn-outline text-center rounded-xl text-sm font-bold">Выбрать тариф →</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-black text-white rounded-2xl p-8 flex flex-col h-full relative transform lg:-translate-y-4 shadow-2xl">
+                        <div class="absolute top-6 right-6 bg-[#0055FF] text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">Популярный</div>
+                        <h3 class="text-xl font-bold mb-2">Вся кофейня</h3>
+                        <p class="text-gray-400 text-sm mb-8 min-h-[40px] pr-16">Комплексный контроль всех зон кофейни.</p>
+                        
+                        <ul class="space-y-4 mb-8 flex-1 text-sm text-white">
+                            <li class="flex items-start"><span class="text-gray-600 mr-3">—</span> Работаем с DMSS, RedLine и др.</li>
+                            <li class="flex items-start"><span class="text-gray-600 mr-3">—</span> Все рабочие зоны и кассы</li>
+                            <li class="flex items-start"><span class="text-gray-600 mr-3">—</span> Личный кабинет в CRM</li>
+                            <li class="flex items-start"><span class="text-gray-600 mr-3">—</span> Итоговая встреча за месяц</li>
+                        </ul>
+                        
+                        <div class="mt-auto">
+                            <div class="flex flex-col gap-2 mb-6">
+                                <label class="premium-radio-dark cursor-pointer block">
+                                    <input type="radio" name="drinkit-full" value="8" class="sr-only" checked onchange="updatePrice('drinkit', 'full', '8')">
+                                    <div class="radio-body flex items-center justify-between p-3 border border-gray-800 rounded-xl transition-all">
+                                        <div class="flex items-center gap-3">
+                                            <div class="radio-circle w-4 h-4 rounded-full border border-gray-600 flex items-center justify-center transition-colors shrink-0">
+                                                <div class="radio-dot w-1.5 h-1.5 rounded-full bg-black opacity-0 transition-opacity"></div>
+                                            </div>
+                                            <span class="font-bold text-sm text-white">8 проверок / мес</span>
+                                        </div>
+                                    </div>
+                                </label>
+
+                                <label class="premium-radio-dark cursor-pointer block">
+                                    <input type="radio" name="drinkit-full" value="12" class="sr-only" onchange="updatePrice('drinkit', 'full', '12')">
+                                    <div class="radio-body flex items-center justify-between p-3 border border-gray-800 rounded-xl transition-all">
+                                        <div class="flex items-center gap-3">
+                                            <div class="radio-circle w-4 h-4 rounded-full border border-gray-600 flex items-center justify-center transition-colors shrink-0">
+                                                <div class="radio-dot w-1.5 h-1.5 rounded-full bg-black opacity-0 transition-opacity"></div>
+                                            </div>
+                                            <span class="font-bold text-sm text-white">12 проверок / мес</span>
+                                        </div>
+                                        <span class="bg-gray-800 text-gray-300 text-[10px] font-bold px-2 py-1 rounded uppercase">-10%</span>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="mb-6">
+                                <div class="text-[32px] font-bold tracking-tight" id="price-drinkit-full">9 990 ₽</div>
+                                <div class="text-xs text-gray-400" id="desc-drinkit-full">в месяц • постоплата • за 1 объект</div>
+                            </div>
+                            <a href="https://t.me/dima_critfaktor" target="_blank" rel="noopener noreferrer" class="block w-full py-3.5 btn-white text-center rounded-xl text-sm font-bold">Выбрать тариф →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="hidden lg:block"></div>
+                </div>
+
+                <div id="content-anybiz" class="hidden grid grid-cols-1 lg:grid-cols-3 gap-6 transition-opacity duration-300 opacity-0">
+                    <div class="bg-white border border-borderLight rounded-2xl p-8 flex flex-col h-full hover:shadow-lg transition-shadow">
+                        <h3 class="text-xl font-bold mb-2">Сфера услуг</h3>
+                        <p class="text-sm text-gray-500 mb-8 min-h-[40px]">Салоны, барбершопы и ритейл.</p>
+                        
+                        <ul class="space-y-4 mb-8 flex-1 text-sm text-black">
+                            <li class="flex items-start"><span class="text-gray-300 mr-3">—</span> Адаптация под стандарты</li>
+                            <li class="flex items-start"><span class="text-gray-300 mr-3">—</span> Работаем с любыми системами</li>
+                            <li class="flex items-start"><span class="text-gray-300 mr-3">—</span> Личный кабинет в CRM</li>
+                        </ul>
+                        
+                        <div class="mt-auto">
+                            <div class="mb-6">
+                                <div class="text-[28px] font-bold tracking-tight leading-tight">Индивидуальный расчёт</div>
+                            </div>
+                            <a href="https://t.me/dima_critfaktor" target="_blank" rel="noopener noreferrer" class="block w-full py-3.5 btn-outline text-center rounded-xl text-sm font-bold">Обсудить →</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-black text-white rounded-2xl p-8 flex flex-col h-full relative transform lg:-translate-y-4 shadow-2xl">
+                        <h3 class="text-xl font-bold mb-2">HoReCa</h3>
+                        <p class="text-gray-400 text-sm mb-8 min-h-[40px] pr-16">Комплексный контроль ресторанов и кафе.</p>
+                        
+                        <ul class="space-y-4 mb-8 flex-1 text-sm text-white">
+                            <li class="flex items-start"><span class="text-gray-600 mr-3">—</span> Пищевая безопасность, скорость</li>
+                            <li class="flex items-start"><span class="text-gray-600 mr-3">—</span> Работаем с любыми системами</li>
+                            <li class="flex items-start"><span class="text-gray-600 mr-3">—</span> Личный кабинет в CRM</li>
+                        </ul>
+                        
+                        <div class="mt-auto">
+                            <div class="mb-6">
+                                <div class="text-[28px] font-bold tracking-tight leading-tight">Индивидуальный расчёт</div>
+                            </div>
+                            <a href="https://t.me/dima_critfaktor" target="_blank" rel="noopener noreferrer" class="block w-full py-3.5 btn-white text-center rounded-xl text-sm font-bold">Обсудить →</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border border-borderLight rounded-2xl p-8 flex flex-col h-full hover:shadow-lg transition-shadow">
+                        <h3 class="text-xl font-bold mb-2">Пилотный проект</h3>
+                        <p class="text-sm text-gray-500 mb-8 min-h-[40px]">Оценка нашей эффективности.</p>
+                        
+                        <ul class="space-y-4 mb-8 flex-1 text-sm text-black">
+                            <li class="flex items-start"><span class="text-gray-300 mr-3">—</span> Разработка чек-листа</li>
+                            <li class="flex items-start"><span class="text-gray-300 mr-3">—</span> 2 тестовые проверки</li>
+                            <li class="flex items-start"><span class="text-gray-300 mr-3">—</span> Расчет стоимости</li>
+                        </ul>
+                        
+                        <div class="mt-auto">
+                            <div class="mb-6">
+                                <div class="text-[32px] font-bold tracking-tight">1 ₽</div>
+                                <div class="text-xs text-gray-500">за тест-драйв</div>
+                            </div>
+                            <a href="https://t.me/dima_critfaktor" target="_blank" rel="noopener noreferrer" class="block w-full py-3.5 btn-outline text-center rounded-xl text-sm font-bold">Начать пилот →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12 md:mt-16 bg-gray-100 rounded-2xl p-8 md:p-12 flex flex-col lg:flex-row items-center justify-between gap-8">
+                    <div class="flex-1 text-center lg:text-left">
+                        <div class="text-[10px] font-bold uppercase tracking-widest text-gray-500 mb-4">— ДОП. УСЛУГА</div>
+                        <h3 class="text-2xl md:text-3xl font-bold text-black mb-4">Уже есть штатный контроль качества?</h3>
+                        <p class="text-gray-700 text-sm md:text-base max-w-3xl leading-relaxed">
+                            Закажите услугу «Второе мнение». Мы проведём независимый выборочный срез, оценим работу точек свежим взглядом и подсветим слепые зоны, к которым могла привыкнуть внутренняя команда. Только объективные данные для собственника.
+                        </p>
+                    </div>
+                    <div class="shrink-0 w-full lg:w-auto">
+                        <a href="https://t.me/dima_critfaktor" target="_blank" rel="noopener noreferrer" class="block w-full lg:inline-block px-8 py-4 btn-black text-center rounded-xl text-sm font-bold">
+                            Оставить заявку →
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="team" class="py-16 md:py-24 max-w-[1400px] mx-auto px-6 border-t border-borderLight">
+            <div class="text-[10px] md:text-xs font-bold uppercase tracking-widest text-gray-500 mb-8 md:mb-12">
+                — Команда
+            </div>
+
+            <div class="mb-12 md:mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight leading-tight">
+                    Люди, которые<br>видят всё.
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-12">
+                <div class="group cursor-pointer flex flex-col items-center text-center">
+                    <div class="w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full overflow-hidden mb-6 bg-gray-100 border border-borderLight shadow-sm">
+                        <img src="https://i.postimg.cc/GHcGdWD4/image.png" alt="Дмитрий Улыбин" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <h3 class="text-lg md:text-xl font-bold mb-1">Дмитрий Улыбин</h3>
+                    <div class="text-[10px] font-bold uppercase tracking-widest text-[#FF6600] mb-2">Лидер проекта</div>
+                    <p class="text-gray-500 text-xs md:text-sm">7 лет с Додо</p>
+                </div>
+
+                <div class="group cursor-pointer flex flex-col items-center text-center">
+                    <div class="w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full overflow-hidden mb-6 bg-gray-100 border border-borderLight shadow-sm">
+                        <img src="https://i.postimg.cc/94pj5qHR/image.png" alt="Виктория Мартиросян" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <h3 class="text-lg md:text-xl font-bold mb-1">Виктория Мартиросян</h3>
+                    <div class="text-[10px] font-bold uppercase tracking-widest text-[#FF6600] mb-2">Бизнес-девелопер</div>
+                    <p class="text-gray-500 text-xs md:text-sm">9 лет с Додо</p>
+                </div>
+
+                <div class="group cursor-pointer flex flex-col items-center text-center">
+                    <div class="w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full overflow-hidden mb-6 bg-gray-100 border border-borderLight shadow-sm">
+                        <img src="https://i.postimg.cc/WpKNbpv4/20240819-182926.jpg" alt="Альбина Бородавкина" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <h3 class="text-lg md:text-xl font-bold mb-1">Альбина Бородавкина</h3>
+                    <div class="text-[10px] font-bold uppercase tracking-widest text-[#FF6600] mb-2">Операционный лидер контроллинга</div>
+                    <p class="text-gray-500 text-xs md:text-sm">10 лет с Додо</p>
+                </div>
+                
+                <div class="group cursor-pointer flex flex-col items-center text-center">
+                    <div class="w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full overflow-hidden mb-6 bg-gray-100 border border-borderLight shadow-sm">
+                        <img src="https://i.postimg.cc/nr6H10R3/2026-07-01-20-20-55.jpg" alt="Саид Ганиев" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <h3 class="text-lg md:text-xl font-bold mb-1">Саид Ганиев</h3>
+                    <div class="text-[10px] font-bold uppercase tracking-widest text-[#FF6600] mb-2">Бизнес девелопер</div>
+                    <p class="text-gray-500 text-xs md:text-sm">5 лет с Додо</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 md:mt-16 bg-white border border-borderLight p-8 md:p-10 rounded-2xl flex items-center justify-center text-center shadow-sm">
+                <p class="text-lg md:text-xl text-gray-700 font-medium leading-relaxed max-w-3xl">
+                    <span class="text-black font-bold">10+ экспертов</span> по всей России от Калининграда до Хабаровска. У каждого — многолетний опыт работы с операционными процессами.
+                </p>
+            </div>
+        </section>
+
+        <section id="faq" class="py-16 md:py-24 max-w-[1400px] mx-auto px-6 border-t border-borderLight">
+            <div class="text-[10px] md:text-xs font-bold uppercase tracking-widest text-gray-500 mb-8 md:mb-12">
+                — FAQ
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16">
+                <div class="lg:col-span-5">
+                    <h2 class="text-4xl md:text-5xl font-bold tracking-tight leading-tight mb-6">
+                        Часто задаваемые<br>вопросы.
+                    </h2>
+                    <p class="text-gray-600 text-lg">
+                        Если не нашли ответ — напишите в Telegram, ответим в течение рабочего дня.
+                    </p>
+                </div>
+                
+                <div class="lg:col-span-7">
+                    <div class="border-t border-borderLight">
+                        
+                        <details class="group border-b border-borderLight">
+                            <summary class="flex justify-between items-center font-bold cursor-pointer list-none py-6 text-lg hover:text-gray-600 transition-colors">
+                                <span>Что входит в проверку за 1 ₽?</span>
+                                <span class="transition group-open:rotate-45 text-2xl font-light text-gray-400">+</span>
+                            </summary>
+                            <div class="text-gray-600 pb-6 text-base leading-relaxed">
+                                Это полноценный аудит одной точки по выбранному тарифу. Вы получите полный структурированный отчет в CRM, чтобы оценить качество нашей работы.
+                            </div>
+                        </details>
+
+                        <details class="group border-b border-borderLight">
+                            <summary class="flex justify-between items-center font-bold cursor-pointer list-none py-6 text-lg hover:text-gray-600 transition-colors">
+                                <span>Сколько времени занимает запуск?</span>
+                                <span class="transition group-open:rotate-45 text-2xl font-light text-gray-400">+</span>
+                            </summary>
+                            <div class="text-gray-600 pb-6 text-base leading-relaxed">
+                                Мы можем провести тестовую проверку уже на следующий день после заявки. Запуск регулярных проверок — с ближайшего понедельника.
+                            </div>
+                        </details>
+                        
+                        <details class="group border-b border-borderLight">
+                            <summary class="flex justify-between items-center font-bold cursor-pointer list-none py-6 text-lg hover:text-gray-600 transition-colors">
+                                <span>Как вы получаете доступ к камерам?</span>
+                                <span class="transition group-open:rotate-45 text-2xl font-light text-gray-400">+</span>
+                            </summary>
+                            <div class="text-gray-600 pb-6 text-base leading-relaxed">
+                                Мы используем стандартные доступы (DMSS, RedLine или публичные камеры на сайте). Работаем с любыми приложениями.
+                            </div>
+                        </details>
+
+                        <details class="group border-b border-borderLight">
+                            <summary class="flex justify-between items-center font-bold cursor-pointer list-none py-6 text-lg hover:text-gray-600 transition-colors">
+                                <span>Смотрят живые люди или ИИ?</span>
+                                <span class="transition group-open:rotate-45 text-2xl font-light text-gray-400">+</span>
+                            </summary>
+                            <div class="text-gray-600 pb-6 text-base leading-relaxed">
+                                Наши проверки проводятся только вручную живыми экспертами. Мы регулярно проводим ротацию экспертов между объектами, чтобы взгляд оставался свежим и объективным.
+                            </div>
+                        </details>
+
+                        <details class="group border-b border-borderLight">
+                            <summary class="flex justify-between items-center font-bold cursor-pointer list-none py-6 text-lg hover:text-gray-600 transition-colors">
+                                <span>Как вы проверяете стандарты?</span>
+                                <span class="transition group-open:rotate-45 text-2xl font-light text-gray-400">+</span>
+                            </summary>
+                            <div class="text-gray-600 pb-6 text-base leading-relaxed">
+                                Мы требовательны и к себе, и к коллегам. Проверяем строго по стандартам УК. Если появляются спорные вопросы — ищем ответы у сотрудников УК вместе с вами.
+                            </div>
+                        </details>
+
+                        <details class="group border-b border-borderLight">
+                            <summary class="flex justify-between items-center font-bold cursor-pointer list-none py-6 text-lg hover:text-gray-600 transition-colors">
+                                <span>Как быстро публикуются отчёты?</span>
+                                <span class="transition group-open:rotate-45 text-2xl font-light text-gray-400">+</span>
+                            </summary>
+                            <div class="text-gray-600 pb-6 text-base leading-relaxed">
+                                Утренние и дневные смены публикуем день в день. Если проверка вечерняя или на закрытие — публикация утром следующего дня.
+                            </div>
+                        </details>
+
+                        <details class="group border-b border-borderLight">
+                            <summary class="flex justify-between items-center font-bold cursor-pointer list-none py-6 text-lg hover:text-gray-600 transition-colors">
+                                <span>В каком мессенджере публикуете результаты?</span>
+                                <span class="transition group-open:rotate-45 text-2xl font-light text-gray-400">+</span>
+                            </summary>
+                            <div class="text-gray-600 pb-6 text-base leading-relaxed">
+                                В Telegram или ВКонтакте.
+                            </div>
+                        </details>
+
+                        <details class="group border-b border-borderLight">
+                            <summary class="flex justify-between items-center font-bold cursor-pointer list-none py-6 text-lg hover:text-gray-600 transition-colors">
+                                <span>Если эксперт ошибся?</span>
+                                <span class="transition group-open:rotate-45 text-2xl font-light text-gray-400">+</span>
+                            </summary>
+                            <div class="text-gray-600 pb-6 text-base leading-relaxed">
+                                У нас есть система апелляций: мы детально рассмотрим ваш тикет и вернем баллы при необходимости. Также мы обязательно дадим обратную связь эксперту, чтобы не допускать подобного в будущем.
+                            </div>
+                        </details>
+
+                        <details class="group border-b border-borderLight">
+                            <summary class="flex justify-between items-center font-bold cursor-pointer list-none py-6 text-lg hover:text-gray-600 transition-colors">
+                                <span>Это не конфликтует с проверками УК?</span>
+                                <span class="transition group-open:rotate-45 text-2xl font-light text-gray-400">+</span>
+                            </summary>
+                            <div class="text-gray-600 pb-6 text-base leading-relaxed">
+                                Нет. Наоборот, мы выявляем системные ошибки до того, как придет проверка УК, помогая вам сохранить высокий рейтинг и избежать штрафов.
+                            </div>
+                        </details>
+
+                        <details class="group border-b border-borderLight">
+                            <summary class="flex justify-between items-center font-bold cursor-pointer list-none py-6 text-lg hover:text-gray-600 transition-colors">
+                                <span>Это конфиденциально?</span>
+                                <span class="transition group-open:rotate-45 text-2xl font-light text-gray-400">+</span>
+                            </summary>
+                            <div class="text-gray-600 pb-6 text-base leading-relaxed">
+                                Да, мы не разглашаем результаты аудитов для УК или третьих лиц.
+                            </div>
+                        </details>
+
+                        <details class="group border-b border-borderLight">
+                            <summary class="flex justify-between items-center font-bold cursor-pointer list-none py-6 text-lg hover:text-gray-600 transition-colors">
+                                <span>Что лучше: предоплата или постоплата?</span>
+                                <span class="transition group-open:rotate-45 text-2xl font-light text-gray-400">+</span>
+                            </summary>
+                            <div class="text-gray-600 pb-6 text-base leading-relaxed">
+                                Выбирайте, как удобнее вам. Предоплата выходит дешевле и помогает нам лучше планировать графики экспертов.
+                            </div>
+                        </details>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pb-16 md:pb-24 max-w-[1400px] mx-auto px-6">
+            <div class="bg-black rounded-[32px] p-8 sm:p-12 md:p-24 text-center text-white flex flex-col items-center">
+                <div class="text-[10px] font-bold uppercase tracking-widest text-gray-500 mb-8">
+                    — Начните с пробной проверки
+                </div>
+                <h2 class="text-3xl sm:text-4xl md:text-6xl font-bold tracking-tight mb-6 max-w-3xl">
+                    Узнайте, что на самом деле происходит в ваших точках.
+                </h2>
+                <p class="text-gray-400 text-base md:text-lg mb-12 max-w-xl mx-auto">
+                    Одна полноценная проверка за 1 ₽ — без подписки, без обязательств. Получите реальный отчёт и решите, нужно ли вам это.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 w-full justify-center">
+                    <a href="https://t.me/dima_critfaktor" target="_blank" rel="noopener noreferrer" class="btn-white px-8 py-4 rounded-xl text-sm font-bold">
+                        Попробовать за 1 ₽ →
+                    </a>
+                    <a href="#tariffs" class="border border-gray-600 hover:border-white hover:bg-white/10 px-8 py-4 rounded-xl text-sm font-bold transition-all text-white">
+                        Изучить тарифы
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-borderLight pt-16 pb-8">
+            <div class="max-w-[1400px] mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div class="md:col-span-1">
+                    <div class="flex items-center mb-4">
+                        <img src="./logo.svg" alt="критфактор" class="h-6 w-auto" aria-hidden="true">
+                    </div>
+                    <p class="text-sm text-gray-500 max-w-xs leading-relaxed">
+                        Независимый контроль операционных процессов для пиццерий, кофеен и сетей HoReCa.
+                    </p>
+                </div>
+                
+                <div>
+                    <div class="text-[10px] font-bold uppercase tracking-widest text-black mb-6">Навигация</div>
+                    <ul class="space-y-4 text-sm text-gray-500">
+                        <li><a href="#how" class="hover:text-black transition-colors">Подход</a></li>
+                        <li><a href="#zones" class="hover:text-black transition-colors">Что проверяем</a></li>
+                        <li><a href="#tariffs" class="hover:text-black transition-colors">Тарифы</a></li>
+                        <li><a href="#team" class="hover:text-black transition-colors">Команда</a></li>
+                        <li><a href="#faq" class="hover:text-black transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <div class="text-[10px] font-bold uppercase tracking-widest text-black mb-6">Бренды</div>
+                    <ul class="space-y-4 text-sm text-gray-500">
+                        <li><button onclick="switchBrand('dodo'); document.getElementById('tariffs').scrollIntoView();" class="hover:text-black transition-colors">Додо Пицца</button></li>
+                        <li><button onclick="switchBrand('drinkit'); document.getElementById('tariffs').scrollIntoView();" class="hover:text-black transition-colors">Дринкит</button></li>
+                        <li><button onclick="switchBrand('anybiz'); document.getElementById('tariffs').scrollIntoView();" class="hover:text-black transition-colors">Любой бизнес</button></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <div class="text-[10px] font-bold uppercase tracking-widest text-black mb-6">Контакты</div>
+                    <ul class="space-y-4 text-sm text-gray-500">
+                        <li><a href="https://t.me/dima_critfaktor" target="_blank" rel="noopener noreferrer" class="hover:text-black transition-colors">Telegram →</a></li>
+                        <li><a href="mailto:hello@critfaktor.ru" class="hover:text-black transition-colors">hello@critfaktor.ru</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="max-w-[1400px] mx-auto px-6 border-t border-borderLight pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400 gap-4">
+                <div>© 2023–2026 критфактор. Не является публичной офертой.</div>
+                <div class="font-mono">v 2.0</div>
+            </div>
+        </footer>
+
+        <script>
+            const prices = {
+                dodo: {
+                    gc: {
+                        '8': { price: '6 990 ₽', desc: 'в месяц • постоплата • за 1 объект' },
+                        '12': { price: '9 890 ₽', desc: 'в месяц • постоплата • за 1 объект' },
+                        '3m': { price: '17 790 ₽', desc: 'за 3 месяца • предоплата • 8 проверок в мес • за 1 объект' }
+                    },
+                    full: {
+                        '8': { price: '13 990 ₽', desc: 'в месяц • постоплата • за 1 объект' },
+                        '12': { price: '19 890 ₽', desc: 'в месяц • постоплата • за 1 объект' },
+                        '3m': { price: '33 490 ₽', desc: 'за 3 месяца • предоплата • 8 проверок в мес • за 1 объект' }
+                    }
+                },
+                drinkit: {
+                    gc: {
+                        '8': { price: '5 990 ₽', desc: 'в месяц • постоплата • за 1 объект' },
+                        '12': { price: '8 490 ₽', desc: 'в месяц • постоплата • за 1 объект' }
+                    },
+                    full: {
+                        '8': { price: '9 990 ₽', desc: 'в месяц • постоплата • за 1 объект' },
+                        '12': { price: '14 190 ₽', desc: 'в месяц • постоплата • за 1 объект' }
+                    }
+                }
+            };
+
+            function updatePrice(brand, type, plan) {
+                const priceEl = document.getElementById(`price-${brand}-${type}`);
+                const descEl = document.getElementById(`desc-${brand}-${type}`);
+                if (priceEl && descEl && prices[brand] && prices[brand][type] && prices[brand][type][plan]) {
+                    priceEl.innerText = prices[brand][type][plan].price;
+                    descEl.innerText = prices[brand][type][plan].desc;
+                }
+            }
+
+            function switchBrand(brand) {
+                ['dodo', 'drinkit', 'anybiz'].forEach(b => {
+                    const tab = document.getElementById(`tab-${b}`);
+                    if (b === brand) {
+                        tab.classList.remove('inactive');
+                        tab.classList.add('active');
+                    } else {
+                        tab.classList.remove('active');
+                        tab.classList.add('inactive');
+                    }
+                });
+
+                ['dodo', 'drinkit', 'anybiz'].forEach(b => {
+                    const content = document.getElementById(`content-${b}`);
+                    if (b === brand) {
+                        content.classList.remove('hidden');
+                        setTimeout(() => content.classList.remove('opacity-0'), 20);
+                    } else {
+                        content.classList.add('opacity-0');
+                        setTimeout(() => content.classList.add('hidden'), 300);
+                    }
+                });
+            }
+        </script>
+    </body>
+    </html>

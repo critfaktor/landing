@@ -1,0 +1,13 @@
+{
+  "name": "critfaktor-landing",
+  "version": "2.0.0",
+  "description": "Landing page for critfaktor.ru",
+  "main": "index.html",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/input.css -o ./dist/styles.css --minify",
+    "watch:css": "tailwindcss -i ./src/input.css -o ./dist/styles.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+}
