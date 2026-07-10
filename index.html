@@ -268,7 +268,8 @@
                     </div>
                 </div>
 
-                <div id="content-dodo" class="grid grid-cols-1 lg:grid-cols-3 gap-6 transition-opacity duration-200">
+                <div class="relative w-full">
+                <div id="content-dodo" class="relative grid grid-cols-1 xl:grid-cols-3 gap-6 content-start transition-opacity duration-300">
         
                     <div class="bg-white border border-[#FF6600]/20 rounded-2xl p-8 flex flex-col h-full hover:shadow-lg transition-shadow relative overflow-hidden">
                         <div class="absolute top-0 right-0 bg-gradient-to-l from-[#FF6600]/10 to-transparent w-32 h-32 rounded-bl-full -z-10"></div>
@@ -349,7 +350,7 @@
 
                     <div class="bg-black text-white rounded-2xl p-8 flex flex-col h-full relative shadow-2xl">
                         <div class="absolute top-6 right-6 bg-[#A64B2A] text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">Популярный</div>
-                        <h3 class="text-xl font-bold mb-2">Вся пиццерия</h3>
+                        <h3 class="text-xl font-bold mb-2 pr-24">Вся пиццерия</h3>
                         <p class="text-gray-400 text-sm mb-8 min-h-[40px] pr-16">Комплексный контроль по всем камерам пиццерии.</p>
                         
                         <ul class="space-y-4 mb-8 flex-1 text-sm text-white">
@@ -398,7 +399,7 @@
                     </div>
                 </div>
 
-                <div id="content-drinkit" class="hidden grid grid-cols-1 lg:grid-cols-3 gap-6 transition-opacity duration-200 opacity-0">
+                <div id="content-drinkit" class="absolute top-0 left-0 w-full grid grid-cols-1 xl:grid-cols-3 gap-6 content-start transition-opacity duration-300 opacity-0 pointer-events-none">
                     <div class="bg-white border border-borderLight rounded-2xl p-8 flex flex-col h-full hover:shadow-lg transition-shadow">
                         <h3 class="text-xl font-bold mb-2">Камера Бара</h3>
                         <p class="text-sm text-gray-500 mb-8 min-h-[40px]">Сфокусированный контроль зоны напитков.</p>
@@ -448,7 +449,7 @@
 
                     <div class="bg-black text-white rounded-2xl p-8 flex flex-col h-full relative shadow-2xl">
                         <div class="absolute top-6 right-6 bg-[#0055FF] text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">Популярный</div>
-                        <h3 class="text-xl font-bold mb-2">Вся кофейня</h3>
+                        <h3 class="text-xl font-bold mb-2 pr-24">Вся кофейня</h3>
                         <p class="text-gray-400 text-sm mb-8 min-h-[40px] pr-16">Комплексный контроль всех зон кофейни.</p>
                         
                         <ul class="space-y-4 mb-8 flex-1 text-sm text-white">
@@ -497,7 +498,7 @@
                     <div class="hidden lg:block"></div>
                 </div>
 
-                <div id="content-anybiz" class="hidden grid grid-cols-1 lg:grid-cols-3 gap-6 transition-opacity duration-200 opacity-0">
+                <div id="content-anybiz" class="absolute top-0 left-0 w-full grid grid-cols-1 xl:grid-cols-3 gap-6 content-start transition-opacity duration-300 opacity-0 pointer-events-none">
                     <div class="bg-white border border-borderLight rounded-2xl p-8 flex flex-col h-full hover:shadow-lg transition-shadow">
                         <h3 class="text-xl font-bold mb-2">Сфера услуг</h3>
                         <p class="text-sm text-gray-500 mb-8 min-h-[40px]">Салоны, барбершопы и ритейл.</p>
@@ -552,6 +553,7 @@
                             <a href="https://t.me/dima_critfaktor" target="_blank" rel="noopener noreferrer" class="block w-full py-3.5 btn-outline text-center rounded-xl text-sm font-bold">Начать пилот →</a>
                         </div>
                     </div>
+                </div>
 
                 <div class="mt-12 md:mt-16 bg-gray-100 rounded-2xl p-8 md:p-12 flex flex-col lg:flex-row items-center justify-between gap-8">
                     <div class="flex-1 text-center lg:text-left">
@@ -583,40 +585,64 @@
             </div>
 
             <div class="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-12">
-                <div class="group cursor-pointer flex flex-col items-center text-center">
-                    <div class="w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full overflow-hidden mb-6 bg-gray-100 border border-borderLight shadow-sm">
+                <div class="group cursor-pointer flex flex-col h-full items-center text-center">
+                    <div class="w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full overflow-hidden mb-6 bg-gray-100 border border-borderLight shadow-sm shrink-0">
                         <img src="./images/team/dmitry_ulybin.png" alt="Дмитрий Улыбин" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                     </div>
-                    <h3 class="text-lg md:text-xl font-bold mb-1">Дмитрий Улыбин</h3>
-                    <div class="text-[10px] font-bold uppercase tracking-widest text-[#FF6600] mb-2">Лидер проекта</div>
-                    <p class="text-gray-500 text-xs md:text-sm">7 лет с Додо</p>
+                    <div class="flex-grow flex items-center justify-center w-full mb-1">
+                        <h3 class="text-lg md:text-xl font-bold">Дмитрий Улыбин</h3>
+                    </div>
+                    <div class="min-h-[40px] flex items-center justify-center w-full mb-2">
+                        <div class="text-[10px] font-bold uppercase tracking-widest text-[#FF6600]">Лидер проекта</div>
+                    </div>
+                    <div class="shrink-0 w-full">
+                        <p class="text-gray-500 text-xs md:text-sm">7 лет с Додо</p>
+                    </div>
                 </div>
 
-                <div class="group cursor-pointer flex flex-col items-center text-center">
-                    <div class="w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full overflow-hidden mb-6 bg-gray-100 border border-borderLight shadow-sm">
+                <div class="group cursor-pointer flex flex-col h-full items-center text-center">
+                    <div class="w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full overflow-hidden mb-6 bg-gray-100 border border-borderLight shadow-sm shrink-0">
                         <img src="./images/team/victoria_martirosyan.png" alt="Виктория Мартиросян" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                     </div>
-                    <h3 class="text-lg md:text-xl font-bold mb-1">Виктория Мартиросян</h3>
-                    <div class="text-[10px] font-bold uppercase tracking-widest text-[#FF6600] mb-2">Бизнес-девелопер</div>
-                    <p class="text-gray-500 text-xs md:text-sm">9 лет с Додо</p>
+                    <div class="flex-grow flex items-center justify-center w-full mb-1">
+                        <h3 class="text-lg md:text-xl font-bold">Виктория Мартиросян</h3>
+                    </div>
+                    <div class="min-h-[40px] flex items-center justify-center w-full mb-2">
+                        <div class="text-[10px] font-bold uppercase tracking-widest text-[#FF6600]">Бизнес-девелопер</div>
+                    </div>
+                    <div class="shrink-0 w-full">
+                        <p class="text-gray-500 text-xs md:text-sm">9 лет с Додо</p>
+                    </div>
                 </div>
 
-                <div class="group cursor-pointer flex flex-col items-center text-center">
-                    <div class="w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full overflow-hidden mb-6 bg-gray-100 border border-borderLight shadow-sm">
+                <div class="group cursor-pointer flex flex-col h-full items-center text-center">
+                    <div class="w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full overflow-hidden mb-6 bg-gray-100 border border-borderLight shadow-sm shrink-0">
                         <img src="./images/team/albina_borodavkina.jpg" alt="Альбина Бородавкина" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                     </div>
-                    <h3 class="text-lg md:text-xl font-bold mb-1">Альбина Бородавкина</h3>
-                    <div class="text-[10px] font-bold uppercase tracking-widest text-[#FF6600] mb-2">Операционный лидер контроллинга</div>
-                    <p class="text-gray-500 text-xs md:text-sm">10 лет с Додо</p>
+                    <div class="flex-grow flex items-center justify-center w-full mb-1">
+                        <h3 class="text-lg md:text-xl font-bold">Альбина Бородавкина</h3>
+                    </div>
+                    <div class="min-h-[40px] flex items-center justify-center w-full mb-2">
+                        <div class="text-[10px] font-bold uppercase tracking-widest text-[#FF6600]">Операционный лидер контроллинга</div>
+                    </div>
+                    <div class="shrink-0 w-full">
+                        <p class="text-gray-500 text-xs md:text-sm">10 лет с Додо</p>
+                    </div>
                 </div>
                 
-                <div class="group cursor-pointer flex flex-col items-center text-center">
-                    <div class="w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full overflow-hidden mb-6 bg-gray-100 border border-borderLight shadow-sm">
+                <div class="group cursor-pointer flex flex-col h-full items-center text-center">
+                    <div class="w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full overflow-hidden mb-6 bg-gray-100 border border-borderLight shadow-sm shrink-0">
                         <img src="./images/team/said_ganiev.jpg" alt="Саид Ганиев" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                     </div>
-                    <h3 class="text-lg md:text-xl font-bold mb-1">Саид Ганиев</h3>
-                    <div class="text-[10px] font-bold uppercase tracking-widest text-[#FF6600] mb-2">Бизнес девелопер</div>
-                    <p class="text-gray-500 text-xs md:text-sm">5 лет с Додо</p>
+                    <div class="flex-grow flex items-center justify-center w-full mb-1">
+                        <h3 class="text-lg md:text-xl font-bold">Саид Ганиев</h3>
+                    </div>
+                    <div class="min-h-[40px] flex items-center justify-center w-full mb-2">
+                        <div class="text-[10px] font-bold uppercase tracking-widest text-[#FF6600]">Бизнес девелопер</div>
+                    </div>
+                    <div class="shrink-0 w-full">
+                        <p class="text-gray-500 text-xs md:text-sm">5 лет с Додо</p>
+                    </div>
                 </div>
             </div>
             

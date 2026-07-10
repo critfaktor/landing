@@ -30,19 +30,8 @@ function updatePrice(brand, type, plan) {
     }
 }
 
-let isTransitioning = false;
-
 function switchBrand(brand) {
-    if (isTransitioning) return;
-
-    // Find currently active brand
-    const activeTab = document.querySelector('.toggle-tab.active');
-    const currentBrand = activeTab ? activeTab.id.replace('tab-', '') : null;
-    if (currentBrand === brand) return;
-
-    isTransitioning = true;
-
-    // Update active tab styles immediately for responsiveness
+    // Update active tab styles
     ['dodo', 'drinkit', 'anybiz'].forEach(b => {
         const tab = document.getElementById(`tab-${b}`);
         if (b === brand) {
@@ -54,35 +43,17 @@ function switchBrand(brand) {
         }
     });
 
-    const currentContent = document.getElementById(`content-${currentBrand}`);
-    const newContent = document.getElementById(`content-${brand}`);
-
-    if (currentContent) {
-        // Fade out current content smoothly
-        currentContent.classList.add('opacity-0');
-
-        setTimeout(() => {
-            // Once faded out, hide it completely so it leaves the layout flow
-            currentContent.classList.add('hidden');
-
-            if (newContent) {
-                // Show new content structure in DOM
-                newContent.classList.remove('hidden');
-                // Force layout reflow so the transition functions correctly
-                newContent.offsetHeight;
-                // Fade in new content smoothly
-                newContent.classList.remove('opacity-0');
-            }
-            isTransitioning = false;
-        }, 200); // Match Tailwind's duration-200 (200ms)
-    } else {
-        if (newContent) {
-            newContent.classList.remove('hidden');
-            newContent.offsetHeight;
-            newContent.classList.remove('opacity-0');
+    // Cross-fade: toggle opacity and pointer-events simultaneously, plus positioning
+    ['dodo', 'drinkit', 'anybiz'].forEach(b => {
+        const content = document.getElementById(`content-${b}`);
+        if (b === brand) {
+            content.classList.remove('opacity-0', 'pointer-events-none', 'absolute', 'top-0', 'left-0', 'w-full');
+            content.classList.add('relative');
+        } else {
+            content.classList.remove('relative');
+            content.classList.add('opacity-0', 'pointer-events-none', 'absolute', 'top-0', 'left-0', 'w-full');
         }
-        isTransitioning = false;
-    }
+    });
 }
 
 function toggleMobileMenu() {
