@@ -268,7 +268,37 @@
                     </div>
                 </div>
 
-                <div id="content-dodo" class="grid grid-cols-1 lg:grid-cols-3 gap-6 transition-opacity duration-300">
+                <div id="content-dodo" class="grid grid-cols-1 lg:grid-cols-3 gap-6 transition-opacity duration-200">
+        
+                    <div class="bg-white border border-[#FF6600]/20 rounded-2xl p-8 flex flex-col h-full hover:shadow-lg transition-shadow relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-gradient-to-l from-[#FF6600]/10 to-transparent w-32 h-32 rounded-bl-full -z-10"></div>
+                        
+                        <div class="inline-block bg-[#FFF4ED] text-[#FF6600] text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-sm mb-4 w-fit">
+                            Спецпредложение
+                        </div>
+                        
+                        <h3 class="text-xl font-bold mb-2">Рейтинг Стандартов <br><span class="text-base font-medium text-gray-700">локальная проверка</span></h3>
+                        <p class="text-sm text-[#FF6600] font-medium mb-6 min-h-[40px]">Узнайте результат раньше, чем придет Инспектор УК.</p>
+                        
+                        <ul class="space-y-4 mb-8 flex-1 text-sm text-black">
+                            <li class="flex items-start"><span class="text-[#FF6600] mr-3 font-bold">✓</span> Проведем проверку по видеозвонку с менеджером</li>
+                            <li class="flex items-start"><span class="text-[#FF6600] mr-3 font-bold">✓</span> Оцениваем по расширенному чек-листу РС от УК</li>
+                            <li class="flex items-start"><span class="text-[#FF6600] mr-3 font-bold">✓</span> Наш лучший эксперт с опытом 10+ лет в Додо</li>
+                            <li class="flex items-start"><span class="text-[#FF6600] mr-3 font-bold">✓</span> Покажем точки роста по РС</li>
+                        </ul>
+                        
+                        <div class="mt-auto">
+                            <div class="mb-4">
+                                <div class="text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-1">1 проверка</div>
+                                <div class="flex items-center gap-3">
+                                    <div class="text-[32px] font-bold tracking-tight text-[#FF6600]">1 990 ₽</div>
+                                </div>
+                            </div>
+                            
+                            <a href="https://t.me/dima_critfaktor" target="_blank" rel="noopener noreferrer" class="block w-full py-3.5 bg-[#FF6600] text-white hover:bg-[#E55C00] transition-colors text-center rounded-xl text-sm font-bold">Заказать →</a>
+                        </div>
+                    </div>
+
                     <div class="bg-white border border-borderLight rounded-2xl p-8 flex flex-col h-full hover:shadow-lg transition-shadow">
                         <h3 class="text-xl font-bold mb-2">Камера ГЦ</h3>
                         <p class="text-sm text-gray-500 mb-8 min-h-[40px]">Сфокусированный контроль камеры горячего цеха.</p>
@@ -306,22 +336,6 @@
                                         <span class="bg-gray-100 text-gray-600 text-[10px] font-bold px-2 py-1 rounded uppercase">-5%</span>
                                     </div>
                                 </label>
-
-                                <label class="premium-radio cursor-pointer block">
-                                    <input type="radio" name="dodo-gc" value="3m" class="sr-only" onchange="updatePrice('dodo', 'gc', '3m')">
-                                    <div class="radio-body flex items-center justify-between p-3 border border-borderLight rounded-xl transition-all bg-green-50/30">
-                                        <div class="flex items-center gap-3">
-                                            <div class="radio-circle w-4 h-4 rounded-full border border-gray-300 flex items-center justify-center transition-colors shrink-0">
-                                                <div class="radio-dot w-1.5 h-1.5 rounded-full bg-white opacity-0 transition-opacity"></div>
-                                            </div>
-                                            <div class="flex flex-col">
-                                                <span class="font-bold text-sm text-gray-800 leading-tight">Пакет на 3 месяца</span>
-                                                <span class="text-[10px] text-green-600 font-semibold mt-0.5">Предоплата - дешевле</span>
-                                            </div>
-                                        </div>
-                                        <span class="bg-[#E5F5E5] text-[#008000] text-[10px] font-bold px-2 py-1 rounded uppercase">-15%</span>
-                                    </div>
-                                </label>
                             </div>
                             
                             <div class="mb-6">
@@ -333,7 +347,7 @@
                         </div>
                     </div>
 
-                    <div class="bg-black text-white rounded-2xl p-8 flex flex-col h-full relative transform lg:-translate-y-4 shadow-2xl">
+                    <div class="bg-black text-white rounded-2xl p-8 flex flex-col h-full relative shadow-2xl">
                         <div class="absolute top-6 right-6 bg-[#A64B2A] text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">Популярный</div>
                         <h3 class="text-xl font-bold mb-2">Вся пиццерия</h3>
                         <p class="text-gray-400 text-sm mb-8 min-h-[40px] pr-16">Комплексный контроль по всем камерам пиццерии.</p>
@@ -372,21 +386,6 @@
                                     </div>
                                 </label>
 
-                                <label class="premium-radio-dark cursor-pointer block">
-                                    <input type="radio" name="dodo-full" value="3m" class="sr-only" onchange="updatePrice('dodo', 'full', '3m')">
-                                    <div class="radio-body flex items-center justify-between p-3 border border-gray-800 rounded-xl transition-all bg-[#0a1a0a]/50">
-                                        <div class="flex items-center gap-3">
-                                            <div class="radio-circle w-4 h-4 rounded-full border border-gray-600 flex items-center justify-center transition-colors shrink-0">
-                                                <div class="radio-dot w-1.5 h-1.5 rounded-full bg-black opacity-0 transition-opacity"></div>
-                                            </div>
-                                            <div class="flex flex-col">
-                                                <span class="font-bold text-sm text-white leading-tight">Пакет на 3 месяца</span>
-                                                <span class="text-[10px] text-green-400 font-semibold mt-0.5">Предоплата - дешевле</span>
-                                            </div>
-                                        </div>
-                                        <span class="bg-green-900/50 text-green-400 text-[10px] font-bold px-2 py-1 rounded uppercase">-15%</span>
-                                    </div>
-                                </label>
                             </div>
                             
                             <div class="mb-6">
@@ -397,40 +396,9 @@
                             <a href="https://t.me/dima_critfaktor" target="_blank" rel="noopener noreferrer" class="block w-full py-3.5 btn-white text-center rounded-xl text-sm font-bold">Выбрать тариф →</a>
                         </div>
                     </div>
-
-                    <div class="bg-white border border-[#FF6600]/20 rounded-2xl p-8 flex flex-col h-full hover:shadow-lg transition-shadow relative overflow-hidden">
-                        <div class="absolute top-0 right-0 bg-gradient-to-l from-[#FF6600]/10 to-transparent w-32 h-32 rounded-bl-full -z-10"></div>
-                        
-                        <div class="inline-block bg-[#FFF4ED] text-[#FF6600] text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-sm mb-4 w-fit">
-                            Спецпредложение
-                        </div>
-                        
-                        <h3 class="text-xl font-bold mb-2">Рейтинг Стандартов <br><span class="text-base font-medium text-gray-700">локальная проверка</span></h3>
-                        <p class="text-sm text-[#FF6600] font-medium mb-6 min-h-[40px]">Узнайте результат раньше, чем придет Инспектор УК.</p>
-                        
-                        <ul class="space-y-4 mb-8 flex-1 text-sm text-black">
-                            <li class="flex items-start"><span class="text-[#FF6600] mr-3 font-bold">✓</span> Проведем проверку по видеозвонку с менеджером</li>
-                            <li class="flex items-start"><span class="text-[#FF6600] mr-3 font-bold">✓</span> Оцениваем по расширенному чек-листу РС от УК</li>
-                            <li class="flex items-start"><span class="text-[#FF6600] mr-3 font-bold">✓</span> Наш лучший эксперт с опытом 10+ лет в Додо</li>
-                            <li class="flex items-start"><span class="text-[#FF6600] mr-3 font-bold">✓</span> Покажем точки роста по РС</li>
-                        </ul>
-                        
-                        <div class="mt-auto">
-                            <div class="mb-4">
-                                <div class="text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-1">1 проверка</div>
-                                <div class="flex items-center gap-3">
-                                    <div class="text-[32px] font-bold tracking-tight text-[#FF6600]">1 690 ₽</div>
-                                    <div class="text-lg text-gray-400 line-through decoration-1">1 990 ₽</div>
-                                </div>
-                                <div class="inline-block mt-2 bg-[#FFF4ED] text-[#FF6600] text-[10px] font-bold px-2 py-1 rounded">ЦЕНА ДО 31.07</div>
-                            </div>
-                            
-                            <a href="https://t.me/dima_critfaktor" target="_blank" rel="noopener noreferrer" class="block w-full py-3.5 bg-[#FF6600] text-white hover:bg-[#E55C00] transition-colors text-center rounded-xl text-sm font-bold">Заказать →</a>
-                        </div>
-                    </div>
                 </div>
 
-                <div id="content-drinkit" class="hidden grid grid-cols-1 lg:grid-cols-3 gap-6 transition-opacity duration-300 opacity-0">
+                <div id="content-drinkit" class="hidden grid grid-cols-1 lg:grid-cols-3 gap-6 transition-opacity duration-200 opacity-0">
                     <div class="bg-white border border-borderLight rounded-2xl p-8 flex flex-col h-full hover:shadow-lg transition-shadow">
                         <h3 class="text-xl font-bold mb-2">Камера Бара</h3>
                         <p class="text-sm text-gray-500 mb-8 min-h-[40px]">Сфокусированный контроль зоны напитков.</p>
@@ -478,7 +446,7 @@
                         </div>
                     </div>
 
-                    <div class="bg-black text-white rounded-2xl p-8 flex flex-col h-full relative transform lg:-translate-y-4 shadow-2xl">
+                    <div class="bg-black text-white rounded-2xl p-8 flex flex-col h-full relative shadow-2xl">
                         <div class="absolute top-6 right-6 bg-[#0055FF] text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">Популярный</div>
                         <h3 class="text-xl font-bold mb-2">Вся кофейня</h3>
                         <p class="text-gray-400 text-sm mb-8 min-h-[40px] pr-16">Комплексный контроль всех зон кофейни.</p>
@@ -529,7 +497,7 @@
                     <div class="hidden lg:block"></div>
                 </div>
 
-                <div id="content-anybiz" class="hidden grid grid-cols-1 lg:grid-cols-3 gap-6 transition-opacity duration-300 opacity-0">
+                <div id="content-anybiz" class="hidden grid grid-cols-1 lg:grid-cols-3 gap-6 transition-opacity duration-200 opacity-0">
                     <div class="bg-white border border-borderLight rounded-2xl p-8 flex flex-col h-full hover:shadow-lg transition-shadow">
                         <h3 class="text-xl font-bold mb-2">Сфера услуг</h3>
                         <p class="text-sm text-gray-500 mb-8 min-h-[40px]">Салоны, барбершопы и ритейл.</p>
@@ -548,7 +516,7 @@
                         </div>
                     </div>
 
-                    <div class="bg-black text-white rounded-2xl p-8 flex flex-col h-full relative transform lg:-translate-y-4 shadow-2xl">
+                    <div class="bg-black text-white rounded-2xl p-8 flex flex-col h-full relative shadow-2xl">
                         <h3 class="text-xl font-bold mb-2">HoReCa</h3>
                         <p class="text-gray-400 text-sm mb-8 min-h-[40px] pr-16">Комплексный контроль ресторанов и кафе.</p>
                         
@@ -584,7 +552,6 @@
                             <a href="https://t.me/dima_critfaktor" target="_blank" rel="noopener noreferrer" class="block w-full py-3.5 btn-outline text-center rounded-xl text-sm font-bold">Начать пилот →</a>
                         </div>
                     </div>
-                </div>
 
                 <div class="mt-12 md:mt-16 bg-gray-100 rounded-2xl p-8 md:p-12 flex flex-col lg:flex-row items-center justify-between gap-8">
                     <div class="flex-1 text-center lg:text-left">
@@ -777,17 +744,6 @@
                                 Да, мы не разглашаем результаты аудитов для УК или третьих лиц.
                             </div>
                         </details>
-
-                        <details class="group border-b border-borderLight">
-                            <summary class="flex justify-between items-center font-bold cursor-pointer list-none py-6 text-lg hover:text-gray-600 transition-colors">
-                                <span>Что лучше: предоплата или постоплата?</span>
-                                <span class="transition group-open:rotate-45 text-2xl font-light text-gray-400">+</span>
-                            </summary>
-                            <div class="text-gray-600 pb-6 text-base leading-relaxed">
-                                Выбирайте, как удобнее вам. Предоплата выходит дешевле и помогает нам лучше планировать графики экспертов.
-                            </div>
-                        </details>
-                        
                     </div>
                 </div>
             </div>
@@ -862,85 +818,6 @@
             </div>
         </footer>
 
-        <script>
-            const prices = {
-                dodo: {
-                    gc: {
-                        '8': { price: '6 990 ₽', desc: 'в месяц • постоплата • за 1 объект' },
-                        '12': { price: '9 890 ₽', desc: 'в месяц • постоплата • за 1 объект' },
-                        '3m': { price: '17 790 ₽', desc: 'за 3 месяца • предоплата • 8 проверок в мес • за 1 объект' }
-                    },
-                    full: {
-                        '8': { price: '13 990 ₽', desc: 'в месяц • постоплата • за 1 объект' },
-                        '12': { price: '19 890 ₽', desc: 'в месяц • постоплата • за 1 объект' },
-                        '3m': { price: '33 490 ₽', desc: 'за 3 месяца • предоплата • 8 проверок в мес • за 1 объект' }
-                    }
-                },
-                drinkit: {
-                    gc: {
-                        '8': { price: '5 990 ₽', desc: 'в месяц • постоплата • за 1 объект' },
-                        '12': { price: '8 490 ₽', desc: 'в месяц • постоплата • за 1 объект' }
-                    },
-                    full: {
-                        '8': { price: '9 990 ₽', desc: 'в месяц • постоплата • за 1 объект' },
-                        '12': { price: '14 190 ₽', desc: 'в месяц • постоплата • за 1 объект' }
-                    }
-                }
-            };
-
-            function updatePrice(brand, type, plan) {
-                const priceEl = document.getElementById(`price-${brand}-${type}`);
-                const descEl = document.getElementById(`desc-${brand}-${type}`);
-                if (priceEl && descEl && prices[brand] && prices[brand][type] && prices[brand][type][plan]) {
-                    priceEl.innerText = prices[brand][type][plan].price;
-                    descEl.innerText = prices[brand][type][plan].desc;
-                }
-            }
-
-            function switchBrand(brand) {
-                ['dodo', 'drinkit', 'anybiz'].forEach(b => {
-                    const tab = document.getElementById(`tab-${b}`);
-                    if (b === brand) {
-                        tab.classList.remove('inactive');
-                        tab.classList.add('active');
-                    } else {
-                        tab.classList.remove('active');
-                        tab.classList.add('inactive');
-                    }
-                });
-
-                ['dodo', 'drinkit', 'anybiz'].forEach(b => {
-                    const content = document.getElementById(`content-${b}`);
-                    if (b === brand) {
-                        content.classList.remove('hidden');
-                        setTimeout(() => content.classList.remove('opacity-0'), 20);
-                    } else {
-                        content.classList.add('opacity-0');
-                        setTimeout(() => content.classList.add('hidden'), 300);
-                    }
-                });
-            }
-
-            function toggleMobileMenu() {
-                const menu = document.getElementById('mobile-menu');
-                const line1 = document.getElementById('burger-line-1');
-                const line2 = document.getElementById('burger-line-2');
-                const line3 = document.getElementById('burger-line-3');
-                
-                if (menu.classList.contains('hidden')) {
-                    menu.classList.remove('hidden');
-                    line1.style.transform = 'translateY(8px) rotate(45deg)';
-                    line2.style.opacity = '0';
-                    line3.style.transform = 'translateY(-8px) rotate(-45deg)';
-                } else {
-                    menu.classList.add('hidden');
-                    line1.style.transform = 'none';
-                    line2.style.opacity = '1';
-                    line3.style.transform = 'none';
-                }
-            }
-
-            document.getElementById('mobile-menu-btn').addEventListener('click', toggleMobileMenu);
-        </script>
+        <script src="./js/script.js" defer></script>
     </body>
     </html>
