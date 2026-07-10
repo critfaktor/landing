@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>критфактор | онлайн-контроллинг</title>
-    <meta name="description" content="Выявляем нарушения стандартов раньше, чем их заметит УК.">
+    <title>критфактор | Онлайн-контроллинг и независимый аудит общепита (HoReCa)</title>
+    <meta name="description" content="Внешний онлайн-аудит операционных процессов для партнёров Додо Пиццы, Дринкит и любых сетей HoReCa. Выявляем нарушения стандартов и риски пищевой безопасности раньше УК. Попробуйте за 1 ₽!">
     
     <!-- Favicon -->
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
@@ -17,17 +17,77 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://critfaktor.ru/">
-    <meta property="og:title" content="критфактор | онлайн-контроллинг">
-    <meta property="og:description" content="Внешний онлайн-аудит операционных процессов для партнёров Додо Пиццы, Дринкит и любых сетей HoReCa. Реальная картина того, что происходит на сменах.">
-    <meta property="og:image" content="https://critfaktor.ru/logo.svg">
+    <meta property="og:title" content="критфактор | Онлайн-контроллинг и независимый аудит общепита (HoReCa)">
+    <meta property="og:description" content="Внешний онлайн-аудит операционных процессов для партнёров Додо Пиццы, Дринкит и любых сетей HoReCa. Реальная картина того, что происходит на сменах. Попробуйте за 1 ₽!">
+    <meta property="og:image" content="https://critfaktor.ru/images/logo-ru.png">
     <meta property="og:site_name" content="критфактор">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://critfaktor.ru/">
-    <meta property="twitter:title" content="критфактор | онлайн-контроллинг">
-    <meta property="twitter:description" content="Выявляем нарушения стандартов раньше, чем их заметит УК.">
-    <meta property="twitter:image" content="https://critfaktor.ru/logo.svg">
+    <meta property="twitter:title" content="критфактор | Онлайн-контроллинг и независимый аудит общепита (HoReCa)">
+    <meta property="twitter:description" content="Внешний онлайн-аудит операционных процессов для партнёров Додо Пиццы, Дринкит и любых сетей HoReCa. Выявляем нарушения стандартов и риски пищевой безопасности раньше УК.">
+    <meta property="twitter:image" content="https://critfaktor.ru/images/logo-ru.png">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Критфактор",
+      "url": "https://critfaktor.ru/",
+      "logo": "https://critfaktor.ru/logo.svg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "hello@critfaktor.com",
+        "url": "https://t.me/dima_critfaktor"
+      },
+      "sameAs": [
+        "https://t.me/dima_critfaktor"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Что входит в проверку за 1 ₽?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Это полноценный аудит одной точки по выбранному тарифу. Вы получите полный структурированный отчет в CRM, чтобы оценить качество нашей работы."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько времени занимает запуск?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Мы можем провести тестовую проверку уже на следующий день после заявки. Запуск регулярных проверок — с ближайшего понедельника."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Смотрят живые люди или ИИ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Наши проверки проводятся только вручную живыми экспертами. Мы регулярно проводим ротацию экспертов между объектами, чтобы взгляд оставался свежим и объективным."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Это не конфликтует с проверками УК?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Наоборот, мы выявляем системные ошибки до того, как придет проверка УК, помогая вам сохранить высокий рейтинг и избежать штрафов."
+          }
+        }
+      ]
+    }
+    </script>
 
     <!-- Stylesheet (Compiled Tailwind & Local Fonts) -->
     <link rel="preload" href="./fonts/montserrat-v31-cyrillic_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
@@ -38,9 +98,9 @@
 
     <nav class="fixed top-0 left-0 w-full bg-[#FAFAFA]/90 backdrop-blur-md z-50 border-b border-gray-200/50">
         <div class="max-w-[1400px] mx-auto px-6 h-20 flex items-center justify-between">
-            <div class="flex items-center">
-                <img src="./logo.svg" alt="критфактор" class="h-6 sm:h-8 w-auto" aria-hidden="true">
-            </div>
+            <a href="/" class="flex items-center" aria-label="критфактор">
+                <img src="./logo.svg" alt="критфактор" class="h-6 sm:h-8 w-auto">
+            </a>
             
             <div class="hidden lg:flex gap-8 text-sm font-medium text-gray-500">
                 <a href="#how" class="hover:text-black transition-colors">Подход</a>
@@ -162,7 +222,7 @@
             
             <div class="mb-12 md:mb-16">
                 <h2 class="text-4xl md:text-5xl font-bold tracking-tight leading-tight">
-                    Четыре шага<br>от заявки до результата.
+                    Четыре шага<br>к запуску онлайн-контроллинга.
                 </h2>
             </div>
 
@@ -209,7 +269,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 mb-12 md:mb-16">
                 <div class="lg:col-span-6">
                     <h2 class="text-4xl md:text-5xl font-bold tracking-tight leading-tight">
-                        Пять зон<br>операционного риска.
+                        Пять зон<br>аудита и контроля рисков.
                     </h2>
                 </div>
                 <div class="lg:col-span-6 flex items-end">
@@ -256,7 +316,7 @@
                 
                 <div class="mb-12 md:mb-16">
                     <h2 class="text-4xl md:text-5xl font-bold tracking-tight leading-tight">
-                        Выберите свой<br>формат подписки.
+                        Тарифы на внешний<br>аудит и контроль качества.
                     </h2>
                 </div>
 
@@ -580,7 +640,7 @@
 
             <div class="mb-12 md:mb-16">
                 <h2 class="text-4xl md:text-5xl font-bold tracking-tight leading-tight">
-                    Люди, которые<br>видят всё.
+                    Команда экспертов<br>ресторанного контроля.
                 </h2>
             </div>
 
@@ -661,7 +721,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16">
                 <div class="lg:col-span-5">
                     <h2 class="text-4xl md:text-5xl font-bold tracking-tight leading-tight mb-6">
-                        Часто задаваемые<br>вопросы.
+                        Ответы на часто<br>заданные вопросы.
                     </h2>
                     <p class="text-gray-600 text-lg">
                         Если не нашли ответ — напишите в Telegram, ответим в течение рабочего дня.
@@ -781,7 +841,7 @@
                     — Начните с пробной проверки
                 </div>
                 <h2 class="text-3xl sm:text-4xl md:text-6xl font-bold tracking-tight mb-6 max-w-3xl">
-                    Узнайте, что на самом деле происходит в ваших точках.
+                    Закажите тестовый аудит стандартов вашей точки за 1 ₽.
                 </h2>
                 <p class="text-gray-400 text-base md:text-lg mb-12 max-w-xl mx-auto">
                     Одна полноценная проверка за 1 ₽ — без подписки, без обязательств. Получите реальный отчёт и решите, нужно ли вам это.
@@ -802,9 +862,9 @@
     <footer class="border-t border-borderLight pt-16 pb-8">
             <div class="max-w-[1400px] mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
                 <div class="md:col-span-1">
-                    <div class="flex items-center mb-4">
-                        <img src="./logo.svg" alt="критфактор" class="h-6 w-auto" aria-hidden="true">
-                    </div>
+                    <a href="/" class="flex items-center mb-4" aria-label="критфактор">
+                        <img src="./logo.svg" alt="критфактор" class="h-6 w-auto">
+                    </a>
                     <p class="text-sm text-gray-500 max-w-xs leading-relaxed">
                         Независимый контроль операционных процессов для пиццерий, кофеен и сетей HoReCa.
                     </p>
