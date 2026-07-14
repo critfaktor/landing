@@ -1,22 +1,22 @@
 const prices = {
     dodo: {
         gc: {
-            '8': { price: '6 990 ₽', desc: 'в месяц • постоплата • за 1 объект' },
-            '12': { price: '9 890 ₽', desc: 'в месяц • постоплата • за 1 объект' }
+            '8': { price: '7 990 ₽', desc: 'в месяц • постоплата • за 1 объект' },
+            '12': { price: '10 990 ₽', desc: 'в месяц • постоплата • за 1 объект' }
         },
         full: {
-            '8': { price: '13 990 ₽', desc: 'в месяц • постоплата • за 1 объект' },
-            '12': { price: '19 890 ₽', desc: 'в месяц • постоплата • за 1 объект' }
+            '8': { price: '14 990 ₽', desc: 'в месяц • постоплата • за 1 объект' },
+            '12': { price: '20 990 ₽', desc: 'в месяц • постоплата • за 1 объект' }
         }
     },
     drinkit: {
         gc: {
-            '8': { price: '5 990 ₽', desc: 'в месяц • постоплата • за 1 объект' },
-            '12': { price: '8 490 ₽', desc: 'в месяц • постоплата • за 1 объект' }
+            '8': { price: '6 990 ₽', desc: 'в месяц • постоплата • за 1 объект' },
+            '12': { price: '9 890 ₽', desc: 'в месяц • постоплата • за 1 объект' }
         },
         full: {
-            '8': { price: '9 990 ₽', desc: 'в месяц • постоплата • за 1 объект' },
-            '12': { price: '14 190 ₽', desc: 'в месяц • постоплата • за 1 объект' }
+            '8': { price: '11 990 ₽', desc: 'в месяц • постоплата • за 1 объект' },
+            '12': { price: '16 190 ₽', desc: 'в месяц • постоплата • за 1 объект' }
         }
     }
 };
@@ -75,4 +75,18 @@ function toggleMobileMenu() {
     }
 }
 
+function initPrices() {
+    for (const brand in prices) {
+        for (const type in prices[brand]) {
+            const checkedRadio = document.querySelector(`input[name="${brand}-${type}"]:checked`);
+            const plan = checkedRadio ? checkedRadio.value : '8';
+            updatePrice(brand, type, plan);
+        }
+    }
+}
+
 document.getElementById('mobile-menu-btn').addEventListener('click', toggleMobileMenu);
+
+// Инициализация цен при загрузке страницы
+initPrices();
+
